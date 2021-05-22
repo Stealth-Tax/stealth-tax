@@ -10,7 +10,43 @@
 </head>
 <body>
     <header>
-        TEST
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <img class="navbar-brand" src="./media/img/logo_white.png" href="#">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">inflation vector</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-3" href="#">theory</a>
+                  </li>
+                <div class="dropdown position-relative">
+                    <button class="btn btn-secondary " type="button" onclick="this.blur()" id="support-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SUPPORT</button>
+                    <div class="dropdown-menu" aria-labelledby="support-dropdown">
+                        <div class="card bg-info position-absolute" style="width: 18rem;" >
+                            <div class="card-body">
+                                <h5 class="card-title">Support Our Work</h5>
+                                <p class="card-text">We will soon be releasing a personalised inflation calculator, that will enable you to accurately predict your asset depreciation. To help us continue with this work, please consider supporting us.</p>
+                                    <button href="#" class="btn btn-secondary" onclick="this.blur()">
+                                        <img class="card-img-bottom" src="./media/img/crypto/crypto_logos.png" alt="Card image cap">
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+          </nav>
+
+          
     </header>
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

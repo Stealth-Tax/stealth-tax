@@ -1,0 +1,23 @@
+nav {
+    font-weight: 200;
+    img {
+        width: 175px;
+    }
+    .nav-link {
+        &.active {
+            font-weight: 400;
+            border-bottom: 0.2rem solid $secondary;
+        }
+    }
+    .btn-secondary {
+        font-size: 0.8rem;
+        margin: 0.2rem 0rem;
+    }
+}
+
+.card {
+    right: 4rem;
+    .card-body {
+        font-weight: 200;
+    }
+}

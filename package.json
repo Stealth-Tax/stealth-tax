@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./scss/custom.scss:./css/main.css"
+    "sass": "sass --watch ./scss/custom_bootstrap.scss:./css/main.css"
   },
   "author": "sebkrz-dev",
   "license": "ISC",
