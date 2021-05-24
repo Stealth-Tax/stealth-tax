@@ -1,0 +1,60 @@
+//Small content boxes
+//Variables
+$small-content-height: 435px;
+
+.small-content-box {
+    background-color: $info;
+    min-height: $small-content-height;
+    
+    h6 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $h6-font-size * 0.8;
+    }
+}
+
+.small-content-header {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 0.2rem solid $secondary;
+    margin-bottom: 0.3rem;
+}
+
+.chart-container {
+    margin-top: 1.5rem;
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    
+}
+
+.carousel-controls{
+    bottom: 2rem; 
+    width:300px;
+}
+
+.carousel-indicators {
+    width: fit-content;
+    margin: 0.5rem auto;
+}
+
+//Lists
+.list-display li {
+    margin-bottom:.8rem;
+    font-size:0.95rem;
+}
+.list-display a {
+    color: white;
+    text-decoration: underline;
+}
+.list-chevrons {
+padding-left:1.0rem;
+}
+.list-chevrons li {
+list-style-type:none;
+padding-left:1rem;
+
+}
+.list-chevrons li:before {    
+content: ">>";
+margin:0 0.8rem 0 -2rem;
+color: $secondary;
+}

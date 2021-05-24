@@ -26,6 +26,14 @@ $dropdown-bg: none;
 $popover-bg: $secondary;
 $popover-font-size: $font-size-base * 0.75;
 
+//Tooltip
+$tooltip-bg: $secondary;
+$tooltip-opacity: 1;
+
+//Modal
+$modal-content-bg: $primary;
+$btn-close-color: white;
+
 //Main setup
 #main-container {
     margin-top: 7rem;

@@ -121,9 +121,193 @@
           </div>
           
         </div>
-        </div>
-      </div>
+        
+      
 
+      <!-- SMALL CONTENT BOXES -->
+      <div class="row justify-content-center">
+
+        <!-- DEBASEMENT FACTORS TAB -->
+
+        <div class="col-lg-3">
+          <div class="content-box small-content-box p-3">
+            <div class="row small-content-header position-relative">
+              <!-- QUESTION MARK POPOVER -->
+              <div class="question-mark position-absolute top-0 start-100 translate-middle pe-4">
+                <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="If you wish to convert labour into wealth over time, CPI is not the metric to use. You need to own assets that hold their real value against the denatured measuring stick of fiat cash.">
+                <img src="./media/icons/question.svg">
+                </button>
+              </div>
+              <h5>Debasement Factors</h5>
+            </div>
+            <div class="row chart-container px-3">                
+                <ul class="list-display list-chevrons mt-3">
+                  <li><a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="M4x is the broadest measure of money stock in the economy.">M4x</a> 12-month annualised growth rate is 15.2%</li>
+                  <li><a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="The GSCI is a weighted commodities index which includes, amongst other things: crude oil, natural gas, corn, live cattle, gold and silver  ">GSCI</a> corrected for the <a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="The BoP is the difference between the total exports versus the total imports in an economy.">Balance of Payments</a> is up 14.20%</li>
+                  <li>House Price Index is up at 8.5%</li>
+                  <li><a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="The CIX100 is an index of the top 100 crypto-currency digital assets.">CIX100</a> corrected for both Market Cap and Currency is up 68%</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+         <!-- RENT-SEEKING TAB -->
+         
+         <div class="col-lg-3 position-relative">
+           <div class="content-box small-content-box py-3">
+             <div class="row px-3">
+               <div class="small-content-header position-relative">
+                 <!-- QUESTION MARK POPOVER -->
+                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-3">
+                   <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Rent seeking is counterproductive as resources are wasted on the beneficiary for no gain in total wealth – zero sum, unlike true capitalism. Public sector spending is first-order State rent seeking. Private sector productivity must pay for this. Or it will be covered by second-order State rent seeking...see ‘Money supply’.">
+                     <img src="./media/icons/question.svg">
+                   </button>
+                 </div>
+                 <h5>Rent Seeking</h5>
+               </div>
+              
+               
+             </div>
+             
+
+             <div class="row chart-container px-3 mt-0">
+
+               <div id="rent-seeking-carousel" class="carousel slide" data-bs-interval="false">
+
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <div class="row pt-2 px-2">
+                         <h6>Public Spending as a Percentage of GDP</h6>
+                     </div>
+                     <div class="row pt-2 px-2">
+                       <canvas class="p-2" id="pieChart" width="500" height="500"></canvas>
+                     </div>
+                     
+                   </div>
+
+                   <div class="carousel-item">
+                     <div class="row pt-2 px-2">
+                         <h6>Public debt vs GDP over time</h6>
+                     </div>
+                     <div class="row pt-2 px-2">
+                       <canvas class="p-2" id="rent-seek-time" width="500" height="500"></canvas>
+                     </div>
+                   </div>
+
+                   <div class="carousel-item">
+                     <div class="row pt-2 px-2">
+                         <h6>Global GDP vs<br>Global Debt</h6>
+
+                     </div>
+                     <div class="row pt-2 px-2">
+                       <canvas class="p-2" id="rent-seek-bubble" width="500" height="500"></canvas>
+                     </div>
+                   </div>
+
+
+                 </div>
+               </div>
+             </div>
+
+             <div class="pb-2 position-absolute bottom-0 start-50 translate-middle-x">
+               <div class="row carousel-controls py-3 position-relative">
+                 <button class="carousel-control-prev" type="button" data-bs-target="#rent-seeking-carousel" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+                 </button>
+                 <div id="rent-seeking-carousel-indicators" class="carousel-indicators">
+                   <button type="button" data-bs-target="#rent-seeking-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                   <button type="button" data-bs-target="#rent-seeking-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                   <button type="button" data-bs-target="#rent-seeking-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                 </div>
+                 <button class="carousel-control-next" type="button" data-bs-target="#rent-seeking-carousel" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                 </button>
+               </div>
+               
+             </div>
+           
+           </div>
+
+           
+         </div>
+
+           <!-- MONEY SUPPLY TAB -->
+         <div class="col-lg-3 position-relative">
+           <div class="content-box small-content-box py-3">
+             <div class="row px-3">
+               <div class="small-content-header position-relative">
+                 <!-- QUESTION MARK POPOVER -->
+                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-3">
+                   <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="GBP print-rate as per M4x. This is a UK measure of broad money. The largest portion of which is commercial bank deposits. Printing is second-order State rent seeking as it devalues the currency.">
+                    <img src="./media/icons/question.svg">
+                   </button>
+                 </div>
+
+
+                 <h5>Money Supply</h5>
+               </div>
+             </div>
+             
+             <div class="row chart-container p-0">
+
+               <div id="chartCarousel" class="carousel slide" data-bs-interval="false">
+                 
+                 
+
+                 <div class="carousel-inner">
+                   
+                   <div class="carousel-item active">
+                     <div class="row pt-2 px-2">
+                       <h6>M4x Growth<br>12month</h6>
+                     </div>
+                     <canvas id="m4xChart12Month" width="500" height="450"></canvas>
+                     
+              
+                   </div>
+                   <div class="carousel-item">
+                     <div class="row pt-2 px-2">
+                       <h6>M4x Growth<br>3-month annualised</h6>
+                     </div>
+                     <canvas id="m4xChart3Month" width="500" height="450"></canvas>
+               
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             
+             <div class="pb-2 position-absolute bottom-0 start-50 translate-middle-x">
+               <div class="row carousel-controls py-3 position-relative">
+                 <button class="carousel-control-prev" type="button" data-bs-target="#chartCarousel" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+                 </button>
+                 <div id="chartCarousel-indicators" class="carousel-indicators">
+                   <button type="button" data-bs-target="#chartCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                   <button type="button" data-bs-target="#chartCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                 </div>
+                 <button class="carousel-control-next" type="button" data-bs-target="#chartCarousel" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                 </button>
+               </div>
+
+             </div>
+
+             
+
+             
+
+           </div>
+         </div>
+         <div class="col-2 d-none d-xxl-block">
+           
+         </div>
+         
+         
+       </div>
       
 
     </main>
@@ -132,5 +316,7 @@
     <script src="./scripts/initialisers.js"></script>
     <script src="./scripts/gauges/gauge.min.js"></script>
     <script src="./scripts/gauges/money-printer-gauge.js"></script>
+    <script src="./scripts/charts/Chart.js"></script>
+    <script src="./scripts/charts/chart-data.js"></script>
 </body>
 </html>
