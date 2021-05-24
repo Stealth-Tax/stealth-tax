@@ -10755,7 +10755,7 @@ nav .btn-secondary:focus {
   border: solid #092632 5px;
   background-color: #101426;
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #mainbox-h1 {
@@ -10768,9 +10768,13 @@ nav .btn-secondary:focus {
 
 .sidebox {
   font-weight: 200;
+  margin-bottom: 0;
+}
+.sidebox .blockquote-footer {
+  margin-bottom: 0;
 }
 
-#headline-inflation-box {
+.bordered-mini-content {
   top: 2rem;
   border: solid #5075AB 4px;
   width: fit-content;
@@ -10778,11 +10782,32 @@ nav .btn-secondary:focus {
   margin: 1rem auto;
   padding: 1.25rem 1.5rem 1rem 1.5rem;
 }
-#headline-inflation-box h1, #headline-inflation-box .h1 {
+.bordered-mini-content h1, .bordered-mini-content .h1 {
   font-size: 2.64rem;
 }
-#headline-inflation-box span {
+.bordered-mini-content span {
   font-weight: 200;
+}
+
+#money-gauge-container {
+  margin-top: 5rem;
+  align-items: center;
+}
+#money-gauge-container h3, #money-gauge-container .h3 {
+  font-size: 0.875rem;
+}
+
+#money-supply-applet h4, #money-supply-applet .h4 {
+  font-size: 1.8rem;
+}
+#money-supply-applet h5, #money-supply-applet .h5 {
+  font-size: 0.875rem;
+}
+
+#money-applet-container {
+  width: 100%;
+  margin: 0 -0.5rem;
+  bottom: 0.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

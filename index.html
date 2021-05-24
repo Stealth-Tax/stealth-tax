@@ -70,9 +70,9 @@
       <div id="main-container" class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">
-            <div class="content-box">
+            <div class="content-box position-relative">
               <h1 id="mainbox-h1">REAL INFLATION</h1>
-              <div id="headline-inflation-box" class="position-relative">
+              <div class="bordered-mini-content position-relative">
                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-4 pt-4">
                   <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="We define Real Inflation by constructing an index based on commodities, hard assets and the increase in monetary supply. Details can be found on the following slide.">
                     <img src="./media/icons/question.svg">
@@ -80,6 +80,19 @@
                 </div>
                 <h1>15.4<span>%</span></h1>
               </div>
+              <!-- Money Gauge -->
+              <div id="money-gauge-container" class="text-center">
+                <h3 class="gauge-title">MONEY PRINTER</h3>
+                <canvas id="money-gauge"></canvas>
+              </div>
+              <div id="money-applet-container" class="position-absolute">
+                <div id="money-supply-applet"class="bordered-mini-content">
+                  <h5>TOTAL MONEY SUPPLY IN CIRCULATION</h5>
+                  <h4>£3,318,055,000,000</h4>
+                </div>
+              </div>
+              
+
               
               
             </div>
@@ -117,5 +130,7 @@
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scripts/initialisers.js"></script>
+    <script src="./scripts/gauges/gauge.min.js"></script>
+    <script src="./scripts/gauges/money-printer-gauge.js"></script>
 </body>
 </html>
