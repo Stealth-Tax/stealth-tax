@@ -2,6 +2,9 @@
 $font-family-sans-serif: "hero-new", Helvetica, sans-serif;
 $body-bg: black;
 $body-color: white;
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 1.65;
+$blockquote-font-size: $font-size-base *0.9;
 
 //Colour definitions
 $primary: #101426;
@@ -19,8 +22,10 @@ $btn-border-radius: 1rem;
 //Main Dropdown Variables
 $dropdown-bg: none;
 
-//Blockquote
-$blockquote-font-size: 0.9rem;
+//Popover
+$popover-bg: $secondary;
+$popover-font-size: $font-size-base * 0.75;
+
 //Main setup
 #main-container {
     margin-top: 7rem;
