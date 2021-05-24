@@ -6,7 +6,6 @@
 // 2. Include any default variable overrides here
 @import "./setup";
 
-
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -51,7 +50,8 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 
-
 // 5. Add additional custom code here
 
 @import "./navbar";
+@import "./content_boxes";
+
