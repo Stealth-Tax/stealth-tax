@@ -10758,14 +10758,6 @@ nav .btn-secondary:focus {
   margin-bottom: 1rem;
 }
 
-#mainbox-h1 {
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: #5075AB;
-  text-decoration-thickness: 0.3rem;
-  text-underline-offset: 0.3rem;
-}
-
 .sidebox {
   font-weight: 200;
   margin-bottom: 0;
@@ -10789,6 +10781,74 @@ nav .btn-secondary:focus {
   font-weight: 200;
 }
 
+.small-content-box {
+  background-color: #121A26;
+  height: 435px;
+}
+.small-content-box h6, .small-content-box .h6 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.small-content-header {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 0.2rem solid #5075AB;
+  margin-bottom: 0.3rem;
+}
+
+.chart-container {
+  margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.carousel-controls {
+  bottom: 2rem;
+  width: 300px;
+}
+
+.carousel-indicators {
+  width: fit-content;
+  margin: 0.5rem auto;
+}
+
+.chart-container-inner {
+  padding: 0 0;
+}
+
+.list-display li {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.list-display a {
+  color: white;
+  text-decoration: underline;
+}
+
+.list-chevrons {
+  padding-left: 1rem;
+}
+
+.list-chevrons li {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.list-chevrons li:before {
+  content: ">>";
+  margin: 0 0.8rem 0 -2rem;
+  color: #5075AB;
+}
+
+#mainbox-h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #5075AB;
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 0.3rem;
+}
+
 #money-gauge-container {
   margin-top: 5rem;
   align-items: center;
@@ -10808,120 +10868,6 @@ nav .btn-secondary:focus {
   width: 100%;
   margin: 0 -0.5rem;
   bottom: 0.2rem;
-}
-
-.small-content-box {
-  background-color: #121A26;
-  min-height: 435px;
-}
-.small-content-box h6, .small-content-box .h6 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-
-.small-content-header {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 0.2rem solid #5075AB;
-  margin-bottom: 0.3rem;
-}
-
-.chart-container {
-  margin-top: 1.5rem;
-  margin: 1.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-.carousel-controls {
-  bottom: 2rem;
-  width: 300px;
-}
-
-.carousel-indicators {
-  width: fit-content;
-  margin: 0.5rem auto;
-}
-
-.list-display li {
-  margin-bottom: 0.8rem;
-  font-size: 0.95rem;
-}
-
-.list-display a {
-  color: white;
-  text-decoration: underline;
-}
-
-.list-chevrons {
-  padding-left: 1rem;
-}
-
-.list-chevrons li {
-  list-style-type: none;
-  padding-left: 1rem;
-}
-
-.list-chevrons li:before {
-  content: ">>";
-  margin: 0 0.8rem 0 -2rem;
-  color: #5075AB;
-}
-
-.small-content-box {
-  background-color: #121A26;
-  min-height: 435px;
-}
-.small-content-box h6, .small-content-box .h6 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-
-.small-content-header {
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 0.2rem solid #5075AB;
-  margin-bottom: 0.3rem;
-}
-
-.chart-container {
-  margin-top: 1.5rem;
-  margin: 1.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-.carousel-controls {
-  bottom: 2rem;
-  width: 300px;
-}
-
-.carousel-indicators {
-  width: fit-content;
-  margin: 0.5rem auto;
-}
-
-.list-display li {
-  margin-bottom: 0.8rem;
-  font-size: 0.95rem;
-}
-
-.list-display a {
-  color: white;
-  text-decoration: underline;
-}
-
-.list-chevrons {
-  padding-left: 1rem;
-}
-
-.list-chevrons li {
-  list-style-type: none;
-  padding-left: 1rem;
-}
-
-.list-chevrons li:before {
-  content: ">>";
-  margin: 0 0.8rem 0 -2rem;
-  color: #5075AB;
 }
 
 /*# sourceMappingURL=main.css.map */

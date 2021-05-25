@@ -1,0 +1,33 @@
+
+#mainbox-h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: $secondary;
+    text-decoration-thickness: 0.3rem;
+    text-underline-offset: 0.3rem;
+}
+
+//Gauge container box
+#money-gauge-container {
+    margin-top: 5rem;
+    align-items: center;
+    h3 {
+        font-size: $h3-font-size * 0.5;
+    }
+}
+
+#money-supply-applet {
+    h4 {
+        font-size: $h4-font-size * 1.2;
+        
+    }
+    h5 {
+        font-size: $h5-font-size * 0.7;
+    }
+}
+
+#money-applet-container {
+    width: 100%;
+    margin: 0 -0.5rem;
+    bottom: 0.2rem; 
+}
