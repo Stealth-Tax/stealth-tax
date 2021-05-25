@@ -10783,7 +10783,7 @@ nav .btn-secondary:focus {
 
 .small-content-box {
   background-color: #121A26;
-  height: 435px;
+  min-height: 435px;
 }
 .small-content-box h6, .small-content-box .h6 {
   text-align: center;
@@ -10869,5 +10869,10 @@ nav .btn-secondary:focus {
   margin: 0 -0.5rem;
   bottom: 0.2rem;
 }
+
+/* Small devices (landscape phones, 544px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */

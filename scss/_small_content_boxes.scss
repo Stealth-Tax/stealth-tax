@@ -3,7 +3,7 @@ $small-content-height: 435px;
 
 .small-content-box {
     background-color: $info;
-    height: $small-content-height;
+    min-height: $small-content-height;
     
     h6 {
         text-align: center;
