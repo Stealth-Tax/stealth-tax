@@ -10783,7 +10783,6 @@ nav .btn-secondary:focus {
 
 .small-content-box {
   background-color: #121A26;
-  min-height: 450px;
 }
 .small-content-box h6, .small-content-box .h6 {
   text-align: center;
@@ -10872,8 +10871,41 @@ nav .btn-secondary:focus {
 }
 
 /* Small devices (landscape phones, 544px and up) */
+@media (min-width: 576px) {
+  .small-content-box {
+    min-height: auto;
+  }
+}
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .list-display li {
+    font-size: 1.1rem;
+  }
+
+  .small-content-box {
+    min-height: auto;
+  }
+}
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .list-display li {
+    font-size: 1.2rem;
+  }
+
+  .small-content-box {
+    min-height: 450px;
+  }
+}
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .small-content-box {
+    min-height: 450px;
+  }
+}
+@media (min-width: 1400px) {
+  .list-display li {
+    font-size: 0.95rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
