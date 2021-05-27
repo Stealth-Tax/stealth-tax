@@ -10783,7 +10783,7 @@ nav .btn-secondary:focus {
 
 .small-content-box {
   background-color: #121A26;
-  min-height: 435px;
+  min-height: 450px;
 }
 .small-content-box h6, .small-content-box .h6 {
   text-align: center;
@@ -10812,7 +10812,8 @@ nav .btn-secondary:focus {
   margin: 0.5rem auto;
 }
 
-.chart-container-inner {
+.chart-resizeable-container {
+  position: relative;
   padding: 0 0;
 }
 

@@ -18,10 +18,10 @@ const canvasSizes = [100, 200, 300, 400, 450];
 let m4x12MonthCanvas = document.getElementById("m4xChart12Month");
 let m4x3MonthCanvas = document.getElementById("m4xChart3Month");
 let pieCanvas = document.getElementById("pieChart");
-    pieCanvas.setAttribute("height", 450);
+    //pieCanvas.setAttribute("height", 450);
 let rentSeekTime = document.getElementById("rent-seek-time");
 let rentSeekBubble = document.getElementById("rent-seek-bubble");
-    rentSeekBubble.setAttribute("height", 450);
+   // rentSeekBubble.setAttribute("height", 450);
 
 //MediaQuery Listeners and Resizers
 //const mediaQueryList = window.matchMedia("only screen and (max-width: 1400px");
@@ -212,7 +212,7 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
             display: false
         },
         //responsive: false
-        //maintainAspectRatio: false
+        //maintainAspectRatio: true
        
         // title: {
         //     display: true,

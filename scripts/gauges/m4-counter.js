@@ -1,25 +1,45 @@
 const moneyCounter = document.getElementById('money-counter');
-const startingAmmount = 10000000000;
-const startingTime = new Date(2021, 01, 01);
-const yearlyGrowth = 1.2;
-const incrementSecond = yearlyGrowth / (360*24*60*60);
+const startingAmmount = 3318055000000;
+const initTime = new Date(2021, 01, 01);
+const yearlyGrowth = 0.25;
+const secondsInYear = (360*24*60*60);
+const incrementSecond = yearlyGrowth / secondsInYear;
+const finalPriceFormat = Intl.NumberFormat('en-GB', 
+{style: 'currency', currency: 'GBP', maximumFractionDigits: 0},
+);
+
+let ammount = startingAmmount;
 
 
+const determineStartingNumber = () => {
+    const timeDiffSeconds = getTimeDiff();
+    console.log(timeDiffSeconds / secondsInYear * yearlyGrowth);
+    ammount = startingAmmount + (timeDiffSeconds / secondsInYear * yearlyGrowth * startingAmmount);
+    
+}
 
 
 const updateCounter = () => {
-    const now = new Date();
-    const timeDiffRaw = now - startingTime;
-    const timeDiffSeconds = (timeDiffRaw / 1000).toFixed(0);
-    const currentAmount = startingAmmount + (timeDiffSeconds * incrementSecond);
+ 
+    ammount += incrementSecond * ammount;
+    //console.log(ammount);
 
-
-    moneyCounter.innerHTML = currentAmount;
+    moneyCounter.innerHTML = finalPriceFormat.format(ammount);
 
 }
 
+
+
+
+
+
+function getTimeDiff() {
+    const timeElapsed = Date.now();
+    const now = new Date(timeElapsed);
+    const timeDiff = Math.abs(now - initTime);
+    const timeDiffSeconds = (timeDiff / 1000).toFixed(0);
+    return timeDiffSeconds;
+}
+
+determineStartingNumber();
 setInterval(updateCounter, 1000);
-
-
-
-

@@ -1,5 +1,5 @@
 //Variables
-$small-content-height: 435px;
+$small-content-height: 450px;
 
 .small-content-box {
     background-color: $info;
@@ -39,7 +39,8 @@ $small-content-height: 435px;
     margin: 0.5rem auto;
 }
 
-.chart-container-inner {
+.chart-resizeable-container {
+    position: relative;
     padding: 0 0;
 }
 

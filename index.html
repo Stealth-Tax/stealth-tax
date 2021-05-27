@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
             <div class="container-fluid">
               <img class="navbar-brand" src="./media/img/logo_white.png" href="#"> or how the government is stealing your money
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,7 @@
 
     </header>
 
-    <main>
+    <main class="container-fluid">
       <!-- Mainbox -->
       <div id="main-container" class="container">
         <div class="row justify-content-center">
@@ -90,7 +90,7 @@
               <div id="money-applet-container" class="position-absolute">
                 <div id="money-supply-applet"class="bordered-mini-content">
                   <h5>TOTAL MONEY SUPPLY IN CIRCULATION</h5>
-                  <h4>£3,318,055,000,000</h4>
+                  <h4 id="money-counter">£3,318,055,000,000</h4>
                 </div>
               </div>
               
@@ -181,9 +181,7 @@
                      <div class="row pt-2 px-2">
                          <h6>Public Spending as a Percentage of GDP</h6>
                      </div>
-                     <div class="row pt-2 px-2 chart-resizeable-container">
-                       <canvas class="p-2" id="pieChart" width="500" height="500"></canvas>
-                     </div>
+                       <canvas class="" id="pieChart" width="500" height="450"></canvas>
                      
                    </div>
 
@@ -191,9 +189,7 @@
                      <div class="row pt-2 px-2">
                          <h6>Public debt vs GDP over time</h6>
                      </div>
-                     <div class="row pt-2 px-2">
                        <canvas class="p-2" id="rent-seek-time" width="500" height="500"></canvas>
-                     </div>
                    </div>
 
                    <div class="carousel-item">
@@ -201,9 +197,7 @@
                          <h6>Global GDP vs<br>Global Debt</h6>
 
                      </div>
-                     <div class="row pt-2 px-2">
-                       <canvas class="p-2" id="rent-seek-bubble" width="500" height="500"></canvas>
-                     </div>
+                       <canvas class="p-2" id="rent-seek-bubble" width="500" height="450"></canvas>
                    </div>
 
 
@@ -320,5 +314,6 @@
     <script src="./scripts/gauges/money-printer-gauge.js"></script>
     <script src="./scripts/charts/Chart.js"></script>
     <script src="./scripts/charts/chart-data.js"></script>
+    <script src="./scripts/gauges/m4-counter.js"></script>
 </body>
 </html>
