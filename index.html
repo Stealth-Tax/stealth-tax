@@ -84,20 +84,32 @@
 
         <!-- Support Modal -->
         <div class="modal fade" id="support-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">SUPPORT</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <figure class="figure">
-                  <img class="figure-img img-fluid rounded crypto-qr" alt="1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU" src="./media/img/crypto/qr/btc_qr_logo.svg">
-                  <figcaption id="btc-address" class="figure-caption">
-                    1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU
-                    <a href="#" onclick="copyToClipboard('1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU')"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
-                  </figcaption>
-                </figure>
+                <div class="container-fluid">
+
+                  <figure class="figure crypto-qr d-inline float-start">
+                    <img class="figure-img img-fluid rounded" alt="1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU" src="./media/img/crypto/qr/btc_qr_logo.svg">
+                    <figcaption id="btc-address" class="figure-caption text-break">
+                      COPY BTC ADDRESS
+                      <a href="#" onclick="copyToClipboard('1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU')"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="figure crypto-qr d-inline float-end">
+                    <img class="figure-img img-fluid rounded" alt="1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU" src="./media/img/crypto/qr/xmr_qr_logo.svg">
+                    <figcaption id="btc-address" class="figure-caption text-break">
+                      COPY XMR ADDRESS
+                      <a href="#" onclick="copyToClipboard('4ARzc1qxPCd3nhuaCYc4d4HQd7VL6rvQGSaqiHiiCc9XPEHWNgyuNrGaHqbtsVxHQdbiXzzSo2j68ia27vQgjdnT1QCptH7')"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
+                    </figcaption>
+                  </figure>
+
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
