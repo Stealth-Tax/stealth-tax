@@ -2150,7 +2150,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  background-color: #fff;
+  background-color: #5075AB;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
@@ -2170,7 +2170,7 @@ progress {
 }
 .form-control:focus {
   color: white;
-  background-color: #fff;
+  background-color: #5075AB;
   border-color: #888a93;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(16, 20, 38, 0.25);
@@ -2191,7 +2191,7 @@ progress {
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
   color: white;
-  background-color: #e9ecef;
+  background-color: #101426;
   pointer-events: none;
   border-color: inherit;
   border-style: solid;
@@ -2206,14 +2206,14 @@ progress {
   }
 }
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
-  background-color: #dde0e3;
+  background-color: #0f1324;
 }
 .form-control::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
   color: white;
-  background-color: #e9ecef;
+  background-color: #101426;
   pointer-events: none;
   border-color: inherit;
   border-style: solid;
@@ -2228,7 +2228,7 @@ progress {
   }
 }
 .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
-  background-color: #dde0e3;
+  background-color: #0f1324;
 }
 
 .form-control-plaintext {
@@ -2316,7 +2316,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: white;
-  background-color: #fff;
+  background-color: #5075AB;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -2372,7 +2372,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #5075AB;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2626,7 +2626,7 @@ textarea.form-control-lg {
   color: white;
   text-align: center;
   white-space: nowrap;
-  background-color: #e9ecef;
+  background-color: #101426;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }
@@ -10750,6 +10750,13 @@ nav .btn-secondary:focus {
   box-shadow: none;
   background-color: #121A26;
 }
+nav .card-footer {
+  text-align: center;
+}
+nav #card-footer-line {
+  width: 300px;
+  border-bottom: 0.2rem solid #5075AB;
+}
 
 .content-box {
   border: solid #092632 5px;
@@ -10906,6 +10913,13 @@ nav .btn-secondary:focus {
   .list-display li {
     font-size: 0.95rem;
   }
+}
+.modal-body {
+  text-align: center;
+}
+
+.crypto-qr {
+  width: 33%;
 }
 
 /*# sourceMappingURL=main.css.map */

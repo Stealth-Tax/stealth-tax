@@ -12,15 +12,20 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 //Carousel Indicators
 let myCarousel = document.querySelector('#chartCarousel');
-        myCarousel.addEventListener('slide.bs.carousel', (event) => {
-          let elementChildrens = document.querySelector("#chartCarousel-indicators").children;
-          elementChildrens.item(event.from).classList.remove("active");
-          elementChildrens.item(event.to).classList.add("active");
-        });
+  myCarousel.addEventListener('slide.bs.carousel', (event) => {
+    let elementChildrens = document.querySelector("#chartCarousel-indicators").children;
+    elementChildrens.item(event.from).classList.remove("active");
+    elementChildrens.item(event.to).classList.add("active");
+});
 
-        let myRentCarousel = document.querySelector('#rent-seeking-carousel');
-        myRentCarousel.addEventListener('slide.bs.carousel', (event) => {
-          let elementChildrens = document.querySelector("#rent-seeking-carousel-indicators").children;
-          elementChildrens.item(event.from).classList.remove("active");
-          elementChildrens.item(event.to).classList.add("active");
-        });
+  let myRentCarousel = document.querySelector('#rent-seeking-carousel');
+  myRentCarousel.addEventListener('slide.bs.carousel', (event) => {
+    let elementChildrens = document.querySelector("#rent-seeking-carousel-indicators").children;
+    elementChildrens.item(event.from).classList.remove("active");
+    elementChildrens.item(event.to).classList.add("active");
+});
+
+//Copy to clip
+const copyToClipboard = (data) => {
+  navigator.clipboard.writeText(data);
+}

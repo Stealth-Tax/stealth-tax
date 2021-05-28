@@ -17,6 +17,14 @@ nav {
             background-color: $info;
         }
     }
+    .card-footer {
+        text-align: center;
+    }
+
+    #card-footer-line {
+        width: 300px;
+        border-bottom: 0.2rem solid $secondary;
+    }
 }
 
 

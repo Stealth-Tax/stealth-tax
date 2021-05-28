@@ -35,9 +35,8 @@
                       <div class="card-body">
                           <h5 class="card-title">Support Our Work</h5>
                           <p class="card-text">We will soon be releasing a personalised inflation calculator, that will enable you to accurately predict your asset depreciation. To help us continue with this work, please consider supporting us.</p>
-                              <button href="#" class="btn btn-secondary" onclick="this.blur()">
-                                  <img class="card-img-bottom" src="./media/img/crypto/crypto_logos.png" alt="Card image cap">
-                              </button>
+                          <!-- <button href="#" class="btn btn-secondary" onclick="this.blur()">DONATE</button> -->
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#support-modal"><img class="card-img-bottom" src="./media/img/crypto/btcxmr_footer.svg" alt="BTC and XMR"></a>
                       </div>
                     </div>
                   </div>
@@ -75,6 +74,30 @@
               </div>
               <div class="modal-body">
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Support Modal -->
+        <div class="modal fade" id="support-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">SUPPORT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <figure class="figure">
+                  <img class="figure-img img-fluid rounded crypto-qr" alt="1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU" src="./media/img/crypto/qr/btc_qr_logo.svg">
+                  <figcaption id="btc-address" class="figure-caption">
+                    1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU
+                    <a href="#" onclick="copyToClipboard('1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU')"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
+                  </figcaption>
+                </figure>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
