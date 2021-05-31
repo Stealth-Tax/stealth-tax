@@ -56,7 +56,7 @@ const rentseekY = [37.4,35.6,35.7,35.1,34.9,35.3,36.4,37.4,38.8,40,39.9,39.8,40.
 //Bubble Data
 const bubbleData = {
     datasets: [{
-      label: 'Global GDP',
+      label: 'GDP - Global',
       data: [{
         x: 45,
         y: 45,
@@ -66,7 +66,7 @@ const bubbleData = {
       
     },
     {
-        label: 'Global Debt',
+        label: 'Debt - Global',
         data: [{
             x: 50,
             y: 50,
@@ -211,14 +211,6 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
         legend: {
             display: false
         },
-        //responsive: false
-        //maintainAspectRatio: true
-       
-        // title: {
-        //     display: true,
-        //     text: 'Public Spending as %GDP'
-        // },
- 
     }
   });
 
@@ -227,13 +219,14 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
     data: {
       labels: rentseekYear,
       datasets: [{
-        label: 'State Rent Seeking %',
+        label: 'State Rent Seeking',
         data: rentseekY,
         backgroundColor: 'rgba(80, 117, 171, 1)',
         pointRadius: '1'
       }]
     },
     options: {
+        
       legend: {
           display: false
       },
@@ -277,25 +270,18 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
     type: 'bubble',
     data: bubbleData,
     options: {
-        //aspectRatio: 1,
-        plugins: {
-          legend: false,
-          tooltip: {
+        tooltips: {
             callbacks: {
-                labelColor: function(context) {
-                    return {
-                        borderColor: 'rgb(0, 0, 255)',
-                        backgroundColor: 'rgb(255, 0, 0)',
-                        borderWidth: 2,
-                        borderDash: [2, 2],
-                        borderRadius: 2,
-                    };
-                },
-                labelTextColor: function(context) {
-                    return '#543453';
+                label: function(tooltipItem, data) {
+                    console.log(tooltipItem);
+                    return data.datasets[tooltipItem.datasetIndex].label;
                 }
             }
-          },
+        },
+        
+        plugins: {
+          legend: false,
+          
         },
         scales:
         {
