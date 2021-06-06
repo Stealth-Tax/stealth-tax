@@ -19,8 +19,12 @@ $navbar-dark-toggler-border-color:  none;
 //Main Button Variables
 $btn-border-radius: 1rem;
 
-//Main Dropdown Variables
+//Dropdown Variables
 $dropdown-bg: none;
+$dropdown-min-width: auto;
+$dropdown-dark-color: white;
+$dropdown-dark-bg: $primary;
+$dropdown-dark-link-hover-bg: rgba($secondary, .55);
 
 //Popover
 $popover-bg: $secondary;
@@ -38,8 +42,3 @@ $btn-close-color: white;
 #main-container {
     margin-top: 7rem;
 }
-
-// //Input
-// $input-color: white;
-// $input-bg: $secondary;
-// $input-group-addon-bg: $primary;
