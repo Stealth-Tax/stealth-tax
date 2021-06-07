@@ -10868,7 +10868,9 @@ nav #card-footer-line {
 }
 
 #money-supply-applet h4, #money-supply-applet .h4 {
-  font-size: 1.8rem;
+  font-size: 1.95rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 #money-supply-applet h5, #money-supply-applet .h5 {
   font-size: 0.875rem;
