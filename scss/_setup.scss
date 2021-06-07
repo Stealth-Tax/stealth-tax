@@ -51,10 +51,11 @@ $toast-header-color: rgba(white, 0.85);
 $toast-header-background-color: rgba($primary, 0.8);
 
 //Accordion
-$accordion-color: rgba(white, 0.85);
+$accordion-color: rgba(white, 0.45);
 $accordion-bg: $primary;
 $accordion-button-active-bg: $primary;
-$accordion-button-active-color: white;
+$accordion-button-active-color: rgba(white, 0.85);
+
 
 
 
