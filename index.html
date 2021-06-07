@@ -9,6 +9,7 @@
 
 </head>
 <body>
+  
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
             <div class="container-fluid">
@@ -32,7 +33,7 @@
 
                       <a class="nav-link dropdown-toggle me-3" href="#" id="currencyDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">GBP(£)</a>
                       <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="currencyDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">USD($)</a></li>
+                        <li><a id="usdToastBtn" class="dropdown-item" href="#">USD($)</a></li>
                       </ul>
 
                   </li>
@@ -128,19 +129,36 @@
           </div>
         </div>
 
+        <!-- USD TOAST-->
+        <div class="position-fixed top-0 end-0 p-3 mt-5" style="z-index: 1100">
+          <div id="usdToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <span class="me-auto">USD Coming Soon</span>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              We're working hard to adapt our models for the USD. Please consider <a href="" data-bs-toggle="modal" data-bs-target="#support-modal">supporting</a> us.
+            </div>
+          </div>
+        </div>
+
     </header>
 
     <main class="container-fluid">
+
+
       <!-- Mainbox -->
       <div id="main-container" class="container">
 
         <div class="row justify-content-center">
           <div class="col-xl-9">
             <div class="content-box position-relative">
+              
+
               <h1 id="mainbox-h1">REAL INFLATION</h1>
               <div class="bordered-mini-content position-relative">
                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-4 pt-4">
-                  <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="We define Real Inflation by constructing an index based on commodities, hard assets and the increase in monetary supply. Details can be found on the following slide.">
+                  <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="We define Real Inflation by constructing an index based on commodities, hard assets and the increase in monetary supply.">
                     <img src="./media/icons/question.svg">
                   </button>
                 </div>
@@ -162,7 +180,7 @@
               
               
             </div>
-            
+
           </div>
 
           <!-- SIDEBOX QUOTES-->
@@ -170,7 +188,7 @@
             <div class="content-box">
               <figure class="row text-end sidebox">
                 <blockquote class="blockquote">
-                  <p>The gold standard did not collapse. Governments abolished it in order to pave the way for inflation. The whole grim apparatus of oppression and coercion, policemen, customs guards, penal courts, prisons, in some countries even executioners, had to be put into action in order to destroy the gold standard.</p>
+                  <p>The gold standard did not collapse. Governments abolished it in order to pave the way for inflation. The whole grim apparatus of oppression and coercion [...] had to be put into action in order to destroy the gold standard.</p>
                 </blockquote>
                   <figcaption class="blockquote-footer">Ludwig von Mises</figcaption>
               </figure>

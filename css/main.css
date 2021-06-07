@@ -199,11 +199,11 @@ sup {
 }
 
 a {
-  color: #101426;
+  color: white;
   text-decoration: underline;
 }
 a:hover {
-  color: #0d101e;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3324,11 +3324,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #101426;
+  color: white;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0d101e;
+  color: rgba(255, 255, 255, 0.8);
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3786,7 +3786,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #101426;
+  color: white;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3796,7 +3796,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0d101e;
+  color: rgba(255, 255, 255, 0.8);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3946,7 +3946,7 @@ textarea.form-control-lg {
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  box-shadow: 0 0 0 0;
 }
 
 .navbar-toggler-icon {
@@ -4492,7 +4492,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #101426;
+  color: white;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -4505,13 +4505,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #0d101e;
+  color: rgba(255, 255, 255, 0.8);
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #0d101e;
+  color: rgba(255, 255, 255, 0.8);
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(16, 20, 38, 0.25);
@@ -5106,8 +5106,9 @@ textarea.form-control-lg {
   width: 350px;
   max-width: 100%;
   font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
   pointer-events: auto;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(16, 20, 38, 0.5);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -5133,8 +5134,8 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.75rem;
-  color: #6c757d;
-  background-color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(16, 20, 38, 0.8);
   background-clip: padding-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-top-left-radius: calc(0.25rem - 1px);

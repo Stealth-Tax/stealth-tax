@@ -16,6 +16,20 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+//Enabling Toasts
+
+document.getElementById("usdToastBtn").onclick = function() {
+  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  const toastList = toastElList.map(function(toastEl) {
+  // Creates an array of toasts (it only initializes them)
+  return new bootstrap.Toast(toastEl) // No need for options; use the default options
+  });
+ toastList.forEach(toast => toast.show()); // This show them
+  console.log(toastList); // Testing to see if it works
+};
+
+
+
 
 //Catching crypto tooltips
 const xmrTriggerEl = document.getElementById('xmr-tooltip');
