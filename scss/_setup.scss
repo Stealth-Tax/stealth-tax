@@ -41,6 +41,7 @@ $tooltip-opacity: 1;
 
 //Modal
 $modal-content-bg: $primary;
+$modal-content-color: rgba(white, 0.8);
 $btn-close-color: white;
 
 //Toasts
@@ -49,7 +50,15 @@ $toast-background-color: rgba($primary, 0.5);
 $toast-header-color: rgba(white, 0.85);
 $toast-header-background-color: rgba($primary, 0.8);
 
+//Accordion
+$accordion-color: rgba(white, 0.85);
+$accordion-bg: $primary;
+$accordion-button-active-bg: $primary;
+$accordion-button-active-color: white;
+
+
+
 //Main setup
 #main-container {
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
