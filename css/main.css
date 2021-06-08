@@ -10781,6 +10781,9 @@ nav #card-footer-line {
   width: 300px;
   border-bottom: 0.2rem solid #5075AB;
 }
+nav #navbar-subtitle span {
+  font-style: italic;
+}
 
 .content-box {
   border: solid #092632 5px;

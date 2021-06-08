@@ -25,6 +25,12 @@ nav {
         width: 300px;
         border-bottom: 0.2rem solid $secondary;
     }
+
+    #navbar-subtitle {
+        span {
+            font-style: italic;
+        }
+    }
 }
 
 
