@@ -41,7 +41,7 @@ $tooltip-opacity: 1;
 
 //Modal
 $modal-content-bg: $primary;
-$modal-content-color: rgba(white, 0.75);
+$modal-content-color: rgba(white, 0.65);    //Colour of Bullet Points
 $btn-close-color: white;
 
 //Toasts
@@ -51,7 +51,7 @@ $toast-header-color: rgba(white, 0.85);
 $toast-header-background-color: rgba($primary, 0.8);
 
 //Accordion
-$accordion-color: rgba(white, 0.85);
+$accordion-color: rgba(white, 1);
 $accordion-bg: $primary;
 $accordion-button-active-bg: $primary;
 $accordion-button-active-color: rgba(white, 0.85);
@@ -63,3 +63,24 @@ $accordion-button-active-color: rgba(white, 0.85);
 #main-container {
     margin-top: 6rem;
 }
+
+//Custom Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $primary;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondary;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba($secondary, .75);
+  }
