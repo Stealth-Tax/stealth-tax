@@ -8,6 +8,7 @@ nav {
             font-weight: 400;
             border-bottom: 0.2rem solid $secondary;
         }
+        cursor: pointer;
     }
     .btn-secondary {
         font-size: 0.8rem;
@@ -17,8 +18,14 @@ nav {
             background-color: $info;
         }
     }
+    .dropdown-menu {
+        cursor: pointer;
+    }
     .card-footer {
         text-align: center;
+    }
+    .card-img-bottom {
+        cursor: pointer;
     }
 
     #card-footer-line {
@@ -31,6 +38,7 @@ nav {
             font-style: italic;
         }
     }
+
 }
 
 

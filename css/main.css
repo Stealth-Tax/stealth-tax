@@ -2499,8 +2499,8 @@ progress {
   list-style: none;
   background-color: none;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border: 0 solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -8991,6 +8991,9 @@ nav {
 nav img {
   width: 175px;
 }
+nav .nav-link {
+  cursor: pointer;
+}
 nav .nav-link.active {
   font-weight: 400;
   border-bottom: 0.2rem solid #5075AB;
@@ -9003,8 +9006,14 @@ nav .btn-secondary:focus {
   box-shadow: none;
   background-color: #121A26;
 }
+nav .dropdown-menu {
+  cursor: pointer;
+}
 nav .card-footer {
   text-align: center;
+}
+nav .card-img-bottom {
+  cursor: pointer;
 }
 nav #card-footer-line {
   width: 300px;
@@ -9058,6 +9067,10 @@ nav #navbar-subtitle span {
   text-align: center;
   border-bottom: 0.2rem solid #5075AB;
   margin-bottom: 0.3rem;
+}
+
+.popup-info {
+  cursor: pointer;
 }
 
 .chart-container {

@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stealth Tax</title>
+    <title>Stealth Tax - revealing the state of theft</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css" media="screen"/>
 
 </head>
 <body>
-  
+          <!-- USD TOAST-->
+          <div class="position-fixed top-0 end-0 p-3 mt-5" style="z-index: 1100">
+            <div id="usdToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <span class="me-auto">USD Coming Soon</span>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                We're working hard to adapt our models for the USD. Please consider <a href="" data-bs-toggle="modal" data-bs-target="#support-modal">supporting</a> us.
+              </div>
+            </div>
+          </div>
     <header class="row container-fluid">
         <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
             <div class="container">
               <img class="navbar-brand" src="./media/img/logo_white.png" href="#"> 
-              <div id="navbar-subtitle" class="d-none d-xl-block">revealing the <span> state </span> of theft</div>
+              <div id="navbar-subtitle" class="d-none d-lg-block">revealing the <span> state </span> of theft</div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -22,19 +33,19 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">dashboard</a>
+                    <a class="nav-link active" aria-current="page">dashboard</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#inflation-vector-modal">inflation vector</a>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#inflation-vector-modal">inflation vector</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#theory-modal">theory</a>
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#theory-modal">theory</a>
                   </li>
                   <li class="nav-item dropdown">
 
-                      <a class="nav-link dropdown-toggle me-3" href="#" id="currencyDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">GBP(£)</a>
+                      <a class="nav-link dropdown-toggle me-3" id="currencyDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">GBP(£)</a>
                       <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="currencyDropdownMenuLink">
-                        <li><a id="usdToastBtn" class="dropdown-item" href="#">USD($)</a></li>
+                        <li><a id="usdToastBtn" class="dropdown-item">USD($)</a></li>
                       </ul>
 
                   </li>
@@ -46,8 +57,7 @@
                       <div class="card-body">
                           <h5 class="card-title">Support Our Work</h5>
                           <p class="card-text">We will soon be releasing a personalised inflation calculator, that will enable you to accurately predict your asset depreciation. To help us continue with this work, please consider supporting us.</p>
-                          <!-- <button href="#" class="btn btn-secondary" onclick="this.blur()">DONATE</button> -->
-                          <a href="#" data-bs-toggle="modal" data-bs-target="#support-modal"><img class="card-img-bottom" src="./media/img/crypto/btcxmr_footer.svg" alt="BTC and XMR"></a>
+                          <a data-bs-toggle="modal" data-bs-target="#support-modal"><img class="card-img-bottom" src="./media/img/crypto/btcxmr_footer.svg" alt="BTC and XMR"></a>
                       </div>
                     </div>
                   </div>
@@ -302,7 +312,7 @@
                     <img class="figure-img img-fluid rounded" alt="1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU" src="./media/img/crypto/qr/btc_qr_logo.svg">
                     <figcaption id="btc-address" class="figure-caption text-break">
                       COPY BTC ADDRESS
-                      <a href="#" id="btc-tooltip" class="popup-info" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copied!" onclick="copyBtcToClipboard()"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
+                      <a id="btc-tooltip" class="popup-info" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copied!" onclick="copyBtcToClipboard()"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
                     </figcaption>
                   </figure>
 
@@ -310,7 +320,7 @@
                     <img class="figure-img img-fluid rounded" alt="1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU" src="./media/img/crypto/qr/xmr_qr_logo.svg">
                     <figcaption id="btc-address" class="figure-caption text-break">
                       COPY XMR ADDRESS
-                      <a href="#" id="xmr-tooltip" class="popup-info" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copied!" onclick="copyXmrToClipboard()"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
+                      <a id="xmr-tooltip" class="popup-info" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copied!" onclick="copyXmrToClipboard()"><img class="crypto-qr-copy mb-1 ms-1" src="./media/icons/clipboard.svg"></a>
                     </figcaption>
                   </figure>
 
@@ -323,18 +333,7 @@
           </div>
         </div>
 
-        <!-- USD TOAST-->
-        <div class="position-fixed top-0 end-0 p-3 mt-5" style="z-index: 1100">
-          <div id="usdToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <span class="me-auto">USD Coming Soon</span>
-              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-              We're working hard to adapt our models for the USD. Please consider <a href="" data-bs-toggle="modal" data-bs-target="#support-modal">supporting</a> us.
-            </div>
-          </div>
-        </div>
+
 
     </header>
 
@@ -412,7 +411,7 @@
             <div class="row px-3">
               <div class="small-content-header position-relative">
                 <!-- QUESTION MARK POPOVER -->
-                <div class="question-mark position-absolute top-0 start-100 translate-middle pe-4">
+                <div class="question-mark position-absolute top-0 start-100 translate-middle pe-2">
                   <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="If you wish to convert labour into wealth over time, CPI is not the metric to use. You need to own assets that hold their real value against the denatured measuring stick of fiat cash.">
                   <img src="./media/icons/question.svg">
                   </button>
@@ -421,10 +420,10 @@
               </div>
               <div class="row chart-container px-3 align-items-center">                
                   <ul class="list-display list-chevrons mt-3">
-                    <li><a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="M4x is the broadest measure of money stock in the economy.">M4x</a> 12-month annualised growth rate is 15.2%</li>
-                    <li><a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="The GSCI is a weighted commodities index which includes, amongst other things: crude oil, natural gas, corn, live cattle, gold and silver  ">GSCI</a> corrected for the <a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="The BoP is the difference between the total exports versus the total imports in an economy.">Balance of Payments</a> is up 14.20%</li>
+                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="M4x is the broadest measure of money stock in the economy.">M4x</a> 12-month annualised growth rate is 15.2%</li>
+                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The GSCI is a weighted commodities index which includes, amongst other things: crude oil, natural gas, corn, live cattle, gold and silver  ">GSCI</a> corrected for the <a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The BoP is the difference between the total exports versus the total imports in an economy.">Balance of Payments</a> is up 14.20%</li>
                     <li>House Price Index is up at 8.5%</li>
-                    <li><a class="popup-info" href="#" data-bs-toggle="tooltip" title="" data-bs-original-title="The CIX100 is an index of the top 100 crypto-currency digital assets.">CIX100</a> corrected for both Market Cap and Currency is up 68%</li>
+                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The CIX100 is an index of the top 100 crypto-currency digital assets.">CIX100</a> corrected for both Market Cap and Currency is up 68%</li>
                   </ul>
               </div>
             </div>
@@ -438,7 +437,7 @@
              <div class="row px-3">
                <div class="small-content-header position-relative">
                  <!-- QUESTION MARK POPOVER -->
-                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-3">
+                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-2">
                    <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Rent seeking is counterproductive as resources are wasted on the beneficiary for no gain in total wealth – zero sum, unlike true capitalism. Public sector spending is first-order State rent seeking. Private sector productivity must pay for this. Or it will be covered by second-order State rent seeking...see ‘Money supply’.">
                      <img src="./media/icons/question.svg">
                    </button>
@@ -513,7 +512,7 @@
              <div class="row px-3">
                <div class="small-content-header position-relative">
                  <!-- QUESTION MARK POPOVER -->
-                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-3">
+                 <div class="question-mark position-absolute top-0 start-100 translate-middle pe-2">
                    <button type="button" class="btn btn-link me-2" onclick="this.blur();" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="GBP print-rate as per M4x. This is a UK measure of broad money. The largest portion of which is commercial bank deposits. Printing is second-order State rent seeking as it devalues the currency.">
                     <img src="./media/icons/question.svg">
                    </button>
