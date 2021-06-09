@@ -9023,6 +9023,10 @@ nav #navbar-subtitle span {
   font-style: italic;
 }
 
+.navbar {
+  z-index: 1090;
+}
+
 .content-box {
   border: solid #092632 5px;
   background-color: #101426;
@@ -9078,8 +9082,7 @@ nav #navbar-subtitle span {
 }
 
 .carousel-controls {
-  bottom: 2rem;
-  width: 300px;
+  margin-top: 0.75rem;
 }
 
 .carousel-indicators {
@@ -9166,23 +9169,44 @@ nav #navbar-subtitle span {
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  #debasement-bullets {
+    margin-top: 4.5rem;
+  }
+
   .list-display li {
     font-size: 1.2rem;
   }
 
   .small-content-box {
-    min-height: 450px;
+    min-height: 506px;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  #debasement-bullets {
+    margin-top: 4rem;
+  }
+
+  .list-display li {
+    font-size: 1.1rem;
+  }
+
   .small-content-box {
-    min-height: 450px;
+    min-height: 484px;
   }
 }
 @media (min-width: 1400px) {
+  #debasement-bullets {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
   .list-display li {
     font-size: 0.95rem;
+  }
+
+  .small-content-box {
+    min-height: 440px;
   }
 }
 .modal-body {

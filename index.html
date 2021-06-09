@@ -9,18 +9,6 @@
 
 </head>
 <body>
-          <!-- USD TOAST-->
-          <div class="position-fixed top-0 end-0 p-3 mt-5" style="z-index: 1100">
-            <div id="usdToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="toast-header">
-                <span class="me-auto">USD Coming Soon</span>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-              </div>
-              <div class="toast-body">
-                We're working hard to adapt our models for the USD. Please consider <a href="" data-bs-toggle="modal" data-bs-target="#support-modal">supporting</a> us.
-              </div>
-            </div>
-          </div>
     <header class="row container-fluid">
         <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
             <div class="container">
@@ -42,12 +30,22 @@
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#theory-modal">theory</a>
                   </li>
                   <li class="nav-item dropdown">
-
-                      <a class="nav-link dropdown-toggle me-3" id="currencyDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">GBP(£)</a>
-                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="currencyDropdownMenuLink">
-                        <li><a id="usdToastBtn" class="dropdown-item">USD($)</a></li>
-                      </ul>
-
+                    <!-- USD TOAST-->
+                    <div class="position-absolute end-0 p-3 mt-5" style="z-index: 1100">
+                      <div id="usdToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <span class="me-auto">USD Coming Soon</span>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                          We're working hard to adapt our models for the USD. Please consider <a href="" data-bs-toggle="modal" data-bs-target="#support-modal">supporting</a> us.
+                        </div>
+                      </div>
+                    </div>
+                    <a class="nav-link dropdown-toggle me-3" id="currencyDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">GBP(£)</a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="currencyDropdownMenuLink">
+                      <li><a id="usdToastBtn" class="dropdown-item">USD($)</a></li>
+                    </ul>
                   </li>
                 </ul>
                 <div class="dropdown">
@@ -418,7 +416,7 @@
                 </div>
                 <h5>Debasement Factors</h5>
               </div>
-              <div class="row chart-container px-3 align-items-center">                
+              <div class="row chart-container px-3 align-items-center" id="debasement-bullets">                
                   <ul class="list-display list-chevrons mt-3">
                     <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="M4x is the broadest measure of money stock in the economy.">M4x</a> 12-month annualised growth rate is 15.2%</li>
                     <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The GSCI is a weighted commodities index which includes, amongst other things: crude oil, natural gas, corn, live cattle, gold and silver  ">GSCI</a> corrected for the <a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The BoP is the difference between the total exports versus the total imports in an economy.">Balance of Payments</a> is up 14.20%</li>
@@ -456,9 +454,9 @@
                  <div class="carousel-inner">
                    <div class="carousel-item active">
                      <div class="row pt-2 px-2">
-                         <h6>Public Spending as a Percentage of GDP</h6>
+                         <h6>Public Spending <br>as a Percentage of GDP</h6>
                      </div>
-                       <canvas class="" id="pieChart" width="500" height="450"></canvas>
+                       <canvas id="pieChart" width="500" height="450"></canvas>
                      
                    </div>
 
@@ -482,8 +480,8 @@
                </div>
              </div>
 
-             <div class="pb-2 position-absolute bottom-0 start-50 translate-middle-x">
-               <div class="row carousel-controls py-3 position-relative">
+             <div class="row">
+               <div class="carousel-controls py-3 position-relative">
                  <button class="carousel-control-prev" type="button" data-bs-target="#rent-seeking-carousel" data-bs-slide="prev">
                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                    <span class="visually-hidden">Previous</span>
@@ -523,7 +521,7 @@
                </div>
              </div>
              
-             <div class="row chart-container p-0">
+             <div class="row chart-container">
 
                <div id="chartCarousel" class="carousel slide px-0" data-bs-interval="false">
                  
@@ -551,8 +549,8 @@
              </div>
 
              
-             <div class="pb-2 position-absolute bottom-0 start-50 translate-middle-x">
-               <div class="row carousel-controls py-3 position-relative">
+             <div class="row">
+               <div class="carousel-controls py-3 position-relative">
                  <button class="carousel-control-prev" type="button" data-bs-target="#chartCarousel" data-bs-slide="prev">
                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                    <span class="visually-hidden">Previous</span>
