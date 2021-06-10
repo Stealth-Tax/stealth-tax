@@ -9159,7 +9159,7 @@ nav #navbar-subtitle span {
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 576px) {
   .small-content-box {
-    height: auto;
+    min-height: auto;
   }
 
   .chart-inner-container {
@@ -9173,7 +9173,7 @@ nav #navbar-subtitle span {
   }
 
   .small-content-box {
-    height: auto;
+    min-height: auto;
   }
 
   .chart-inner-container {
@@ -9191,7 +9191,7 @@ nav #navbar-subtitle span {
   }
 
   .small-content-box {
-    height: 483px;
+    min-height: 483px;
   }
 
   .chart-inner-container {
@@ -9209,7 +9209,7 @@ nav #navbar-subtitle span {
   }
 
   .small-content-box {
-    height: 466.2px;
+    min-height: 466.2px;
   }
 }
 @media (min-width: 1400px) {
@@ -9223,7 +9223,7 @@ nav #navbar-subtitle span {
   }
 
   .small-content-box {
-    height: 420px;
+    min-height: 420px;
   }
 }
 .modal-body {
