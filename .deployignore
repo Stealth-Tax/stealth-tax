@@ -1,4 +1,6 @@
 node_modules/**
 scss/**
+media/img/crypto/wip/**
+media/icons/assets/**
 !node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
 !node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map
