@@ -5,6 +5,11 @@
   margin-top: 6rem;
 }
 
+canvas {
+  width: 500px;
+  height: 500px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -9078,7 +9083,7 @@ nav #navbar-subtitle span {
 }
 
 .chart-container {
-  margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 1.5rem 0.5rem 1rem 0.5rem;
 }
 
 .carousel-controls {
@@ -9095,12 +9100,8 @@ nav #navbar-subtitle span {
   margin: 0 auto;
 }
 
-canvas {
-  margin: 0 auto;
-}
-
 .list-display li {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   font-size: 0.95rem;
 }
 
@@ -9120,7 +9121,7 @@ canvas {
 
 .list-chevrons li:before {
   content: ">>";
-  margin: 0 0.8rem 0 -2rem;
+  margin: 0 0.8rem 0 -2.2rem;
   color: #5075AB;
 }
 
@@ -9190,7 +9191,7 @@ canvas {
   }
 
   .small-content-box {
-    min-height: 484px;
+    min-height: 483px;
   }
 
   .chart-inner-container {
@@ -9200,7 +9201,7 @@ canvas {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #debasement-bullets {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   .list-display li {
@@ -9208,12 +9209,12 @@ canvas {
   }
 
   .small-content-box {
-    min-height: 484px;
+    min-height: 466.2px;
   }
 }
 @media (min-width: 1400px) {
   #debasement-bullets {
-    margin-top: 2rem;
+    margin-top: 0.75rem;
     margin-left: 0;
   }
 
@@ -9222,7 +9223,7 @@ canvas {
   }
 
   .small-content-box {
-    min-height: 440px;
+    min-height: 420px;
   }
 }
 .modal-body {

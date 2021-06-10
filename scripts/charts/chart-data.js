@@ -7,41 +7,13 @@ const mediaQueryList = [
     window.matchMedia("only screen and (min-width: 1400px")
 ]
 
-const canvasSizes = [100, 200, 300, 400, 450];
-
-
-
-
-
-
 //Canvas elements
 let m4x12MonthCanvas = document.getElementById("m4xChart12Month");
 let m4x3MonthCanvas = document.getElementById("m4xChart3Month");
 let pieCanvas = document.getElementById("pieChart");
-    //pieCanvas.setAttribute("height", 450);
 let rentSeekTime = document.getElementById("rent-seek-time");
 let rentSeekBubble = document.getElementById("rent-seek-bubble");
-   // rentSeekBubble.setAttribute("height", 450);
 
-//MediaQuery Listeners and Resizers
-//const mediaQueryList = window.matchMedia("only screen and (max-width: 1400px");
-// const listener = event => {
-//     if(mediaQueryList[0].matches) {
-//         pieCanvas.setAttribute("height", canvasSizes[0]);
-//         console.log("YES");
-//         console.log(pieCanvas.getAttribute("height"));
-//     };
-//     if(mediaQueryList[1].matches) pieCanvas.setAttribute("height", canvasSizes[1]);
-//     if(mediaQueryList[2].matches) pieCanvas.setAttribute("height", canvasSizes[2]);
-// }
-// //mediaQueryList[0].addEventListener("change", listener);
-// for(let i=0; i<mediaQueryList.length; i++) {
-//    mediaQueryList[i].addEventListener("change", listener);
-// //    if(mediaQueryList[i].matches) {
-// //        pieCanvas.setAttribute("height", canvasSizes[i]);
-// //        console.log(canvasSizes[i]);
-// //    }
-// }
 
 
 //m4x Data
@@ -60,7 +32,7 @@ const bubbleData = {
       data: [{
         x: 45,
         y: 45,
-        r: 60
+        r: 50
       }],
       backgroundColor: '#092632',
       
@@ -70,7 +42,7 @@ const bubbleData = {
         data: [{
             x: 50,
             y: 50,
-            r: 140
+            r: 90
         }],
         backgroundColor: 'rgb(80, 117, 171)'
     }],
@@ -129,7 +101,8 @@ let m4xChart12Month = new Chart(m4x12MonthCanvas, {
             //     labelString: 'Growth'
             // }
         }],
-      }
+      },
+      
       
 }
 });
@@ -211,6 +184,7 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
         legend: {
             display: false
         },
+        
     }
   });
 

@@ -1,5 +1,5 @@
 //variables
-$small-content-height:440px;
+$small-content-height:420px;
 
 
 /* Small devices (landscape phones, 544px and up) */
@@ -33,7 +33,7 @@ $small-content-height:440px;
         font-size:1.2rem;
     }
     .small-content-box {
-        min-height: $small-content-height *1.1;
+        min-height: $small-content-height *1.15;
     }
     .chart-inner-container {
         width: 90%;
@@ -43,19 +43,19 @@ $small-content-height:440px;
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     #debasement-bullets {
-        margin-top: 4rem;
+        margin-top: 3rem;
     } 
     .list-display li {
         font-size:1.1rem;
     }
     .small-content-box {
-        min-height: $small-content-height *1.1;
+        min-height: $small-content-height *1.11;
     }
 }
 
 @media (min-width: 1400px) {
     #debasement-bullets {
-        margin-top: 2rem;
+        margin-top: 0.75rem;
         margin-left: 0;
     }
     .list-display li {
