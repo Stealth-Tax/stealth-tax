@@ -1,6 +1,8 @@
 # Stealth Tax - June 2021 v1.0
-<https://stealthtax.io>
-<ipfs://stealthtax.crypto>
+### <https://stealthtax.io>
+### Also available via IPFS on [stealthtax.crypto](https://unstoppabledomains.com/)
+
+
 ## The State of Theft
 _Inflation is the opium of the masses - Henry Hazlitt_
 
