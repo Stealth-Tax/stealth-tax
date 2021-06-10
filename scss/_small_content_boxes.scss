@@ -42,9 +42,12 @@
     margin: 0.5rem auto;
 }
 
-.chart-resizeable-container {
-    position: relative;
-    padding: 0 0;
+.chart-inner-container {
+    margin: 0 auto;
+   
+}
+canvas {
+    margin: 0 auto;
 }
 
 //Lists

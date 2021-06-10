@@ -9091,9 +9091,12 @@ nav #navbar-subtitle span {
   margin: 0.5rem auto;
 }
 
-.chart-resizeable-container {
-  position: relative;
-  padding: 0 0;
+.chart-inner-container {
+  margin: 0 auto;
+}
+
+canvas {
+  margin: 0 auto;
 }
 
 .list-display li {
@@ -9157,6 +9160,10 @@ nav #navbar-subtitle span {
   .small-content-box {
     min-height: auto;
   }
+
+  .chart-inner-container {
+    width: 75%;
+  }
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
@@ -9166,6 +9173,10 @@ nav #navbar-subtitle span {
 
   .small-content-box {
     min-height: auto;
+  }
+
+  .chart-inner-container {
+    width: 75%;
   }
 }
 /* Large devices (desktops, 992px and up) */
@@ -9179,7 +9190,11 @@ nav #navbar-subtitle span {
   }
 
   .small-content-box {
-    min-height: 506px;
+    min-height: 484px;
+  }
+
+  .chart-inner-container {
+    width: 90%;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */

@@ -7,6 +7,9 @@ $small-content-height:440px;
     .small-content-box {
         min-height: auto;
     }
+    .chart-inner-container {
+        width: 75%;
+    }
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -17,9 +20,9 @@ $small-content-height:440px;
     .small-content-box {
         min-height: auto;
     }
-}
-@media (max-width: 992px) {
-    
+    .chart-inner-container {
+        width: 75%;
+    }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -30,7 +33,10 @@ $small-content-height:440px;
         font-size:1.2rem;
     }
     .small-content-box {
-        min-height: $small-content-height *1.15;
+        min-height: $small-content-height *1.1;
+    }
+    .chart-inner-container {
+        width: 90%;
     }
 }
  

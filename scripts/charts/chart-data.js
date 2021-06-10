@@ -60,7 +60,7 @@ const bubbleData = {
       data: [{
         x: 45,
         y: 45,
-        r: 45
+        r: 60
       }],
       backgroundColor: '#092632',
       
@@ -70,7 +70,7 @@ const bubbleData = {
         data: [{
             x: 50,
             y: 50,
-            r: 100
+            r: 140
         }],
         backgroundColor: 'rgb(80, 117, 171)'
     }],
