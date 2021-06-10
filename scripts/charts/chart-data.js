@@ -247,7 +247,6 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
         tooltips: {
             callbacks: {
                 label: function(tooltipItem, data) {
-                    console.log(tooltipItem);
                     return data.datasets[tooltipItem.datasetIndex].label;
                 }
             }

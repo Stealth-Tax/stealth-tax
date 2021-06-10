@@ -13,7 +13,6 @@ let ammount = startingAmmount;
 
 const determineStartingNumber = () => {
     const timeDiffSeconds = getTimeDiff();
-    console.log(timeDiffSeconds / secondsInYear * yearlyGrowth);
     ammount = startingAmmount + (timeDiffSeconds / secondsInYear * yearlyGrowth * startingAmmount);
     
 }
@@ -22,7 +21,6 @@ const determineStartingNumber = () => {
 const updateCounter = () => {
  
     ammount += incrementSecond * ammount;
-    //console.log(ammount);
 
     moneyCounter.innerHTML = finalPriceFormat.format(ammount);
 

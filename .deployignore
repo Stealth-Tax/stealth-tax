@@ -1,4 +1,4 @@
 node_modules/**
 scss/**
-css/main.css.map
 !node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+!node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map
