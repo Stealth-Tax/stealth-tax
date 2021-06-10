@@ -5,7 +5,7 @@ $small-content-height:420px;
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 576px) {  
     .small-content-box {
-        min-height: auto;
+        height: auto;
     }
     .chart-inner-container {
         width: 75%;
@@ -18,7 +18,7 @@ $small-content-height:420px;
         font-size:1.1rem;
     }
     .small-content-box {
-        min-height: auto;
+        height: auto;
     }
     .chart-inner-container {
         width: 75%;
@@ -33,7 +33,7 @@ $small-content-height:420px;
         font-size:1.2rem;
     }
     .small-content-box {
-        min-height: $small-content-height *1.15;
+        height: $small-content-height *1.15;
     }
     .chart-inner-container {
         width: 90%;
@@ -49,7 +49,7 @@ $small-content-height:420px;
         font-size:1.1rem;
     }
     .small-content-box {
-        min-height: $small-content-height *1.11;
+        height: $small-content-height *1.11;
     }
 }
 
@@ -62,6 +62,6 @@ $small-content-height:420px;
         font-size:0.95rem;
     }
     .small-content-box {
-        min-height: $small-content-height;
+        height: $small-content-height;
     }
 }
