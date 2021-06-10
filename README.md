@@ -17,6 +17,8 @@ We use the following open source libraries and tools:
 
 ### Release notes:
 * 10 June 21 - Final minor changes for initial release. Deployed. See commit list for further details.
+* Next release will include backdated modelling of real inflation to show changes over last two years or so
+* Real inflation index calculation method to be released in next cycle.
 
 ### Contact
 [info@stealthtax.io](mailto:info@stealthtax.io)
