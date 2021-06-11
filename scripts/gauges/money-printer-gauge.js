@@ -24,7 +24,7 @@ const gauge = new RadialGauge({
         }
     ],
     colorPlate: "#101426",
-    colorNumbers: "#ccc",
+    colorNumbers: "#101426",
     fontNumbers:"hero-new,sans-serif",
     fontNumbersWeight: "lighter",
     borderShadowWidth: 0,
