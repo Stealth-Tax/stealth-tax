@@ -99,7 +99,9 @@ let inflationChart = new Chart(inflationCanvas, {
           },
         pointBackgroundColor: 'rgba(31, 39, 74, 1)',
 		borderWidth: 0.75,
-		borderColor: '#5075AB'
+		borderColor: '#5075AB',
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'white'
       }],
     },
     options: {

@@ -91,7 +91,7 @@
             <div class="modal-content">
 
               <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">THEORY</h5>
+                <h5 class="modal-title text-uppercase" id="staticBackdropLabel" >Forgotten Axioms - Leave the Sophistry Behind</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
 
@@ -288,7 +288,10 @@
                   </div>
                 </div>
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer justify-content-between">
+                <div>
+                  For more essential reading, please visit the <a href="https://mises.org/" target="_blank">Mises Institute.</a>
+                </div> 
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
@@ -386,17 +389,17 @@
             <div class="content-box">
               <figure class="row text-end sidebox">
                 <blockquote class="blockquote">
-                  <p>The gold standard did not collapse. Governments abolished it in order to pave the way for inflation. The whole grim apparatus of oppression and coercion [...] had to be put into action in order to destroy the gold standard.</p>
+                  <p id="quote-one-body"></p>
                 </blockquote>
-                  <figcaption class="blockquote-footer">Ludwig von Mises</figcaption>
+                  <figcaption id="quote-one-author" class="blockquote-footer"></figcaption>
               </figure>
             </div>
             <div class="content-box">
               <figure class="row text-end sidebox">
                 <blockquote class="blockquote">
-                  <p>Hyperinflation can take virtually your entire life's savings, without the government having to bother raising the official tax rate at all.</p>
+                  <p id="quote-two-body">Hyperinflation can take virtually your entire life's savings, without the government having to bother raising the official tax rate at all.</p>
                 </blockquote>
-                  <figcaption class="blockquote-footer">Thomas Sowell</figcaption>
+                  <figcaption id="quote-two-author" class="blockquote-footer">Thomas Sowell</figcaption>
               </figure>
             </div>
             
@@ -425,10 +428,10 @@
               </div>
               <div class="row chart-container px-3" id="debasement-bullets">                
                   <ul class="list-display list-chevrons mt-3">
-                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="M4x is the broadest measure of money stock in the economy.">M4x</a> 12-month annualised growth rate is 15.2%</li>
-                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The GSCI is a weighted commodities index which includes, amongst other things: crude oil, natural gas, corn, live cattle, gold and silver  ">GSCI</a> corrected for the <a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The BoP is the difference between the total exports versus the total imports in an economy.">Balance of Payments</a> is up 14.20%</li>
-                    <li>House Price Index is up at 8.5%</li>
-                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The CIX100 is an index of the top 100 crypto-currency digital assets.">CIX100</a> corrected for both Market Cap and Currency is up 68%</li>
+                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="M4x is the broadest measure of money stock in the economy.">M4x</a> 12-month annualised growth rate is 11.00%</li>
+                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The GSCI is a weighted commodities index which includes, amongst other things: crude oil, natural gas, corn, live cattle, gold and silver  ">GSCI</a> corrected for the <a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The BoP is the difference between the total exports versus the total imports in an economy.">Balance of Payments</a> is up 65.21%</li>
+                    <li>House Price Index is up at 10.20%</li>
+                    <li><a class="popup-info" data-bs-toggle="tooltip" data-bs-original-title="The CIX100 is an index of the top 100 crypto-currency digital assets.">CIX100</a> corrected for both Market Cap and Currency is up 83.48%</li>
                   </ul>
               </div>
             </div>
@@ -582,6 +585,7 @@
     <script src="./scripts/charts/Chart.js"></script>
     <script src="./scripts/charts/chart-data.js"></script>
     <script src="./scripts/gauges/m4-counter.js"></script>
+    <script src="./scripts/quotes.js"></script>
     <!-- Start Open Web Analytics Tracker -->
     <!-- <script type="text/javascript">
       //<![CDATA[
