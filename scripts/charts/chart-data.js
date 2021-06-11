@@ -60,13 +60,6 @@ Chart.defaults.global.defaultFontFamily = "'hero-new', 'Helvetica', sans-serif";
 
 
 //Inflation Gradient
-// let gradient = inflationCanvas.createLinearGradient(0, 0, 0, 450);
-// gradient.addColorStop(0,'rgba(31, 39, 74, 0.3)');
-// gradient.addColorStop(0.5,'rgba(31, 39, 74, 0.15)');
-// gradient.addColorStop(1, 'rgba(31, 39, 74, 0)');
-// let gradient = inflationCanvas.createLinearGradient(0, 0, 0, 400);
-// gradient.addColorStop(0, 'rgba(250,174,50,1)');   
-// gradient.addColorStop(1, 'rgba(250,174,50,0)');
 let width, height, gradient;
 const getGradient = (ctx, chartArea) => {
   const chartWidth = chartArea.right - chartArea.left;
@@ -114,10 +107,11 @@ let inflationChart = new Chart(inflationCanvas, {
             
             callbacks: {
                 label: function(tooltipItem, data) {
-                    return 'Inflation: ' + data['datasets'][0]['data'][tooltipItem['index']] + "%";
+                    return 'RII: ' + data['datasets'][0]['data'][tooltipItem['index']] + "%";
                 }
             },
             titleFontSize: 12,
+            titleAlign: 'right',
             bodyFontSize: 14,
             bodyAlign: 'right',
             displayColors: false,
@@ -150,7 +144,6 @@ let inflationChart = new Chart(inflationCanvas, {
               },
           }],
         },
-        //responsive: false
         
         
   }
@@ -370,6 +363,8 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
                 }
             },
             titleAlign: 'center',
+            titleFontSize: 9,
+            bodyFontSize: 11,
             bodyAlign: 'center',
             displayColors: false
           }
