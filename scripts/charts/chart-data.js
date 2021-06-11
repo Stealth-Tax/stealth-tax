@@ -13,6 +13,7 @@ let m4x3MonthCanvas = document.getElementById("m4xChart3Month");
 let pieCanvas = document.getElementById("pieChart");
 let rentSeekTime = document.getElementById("rent-seek-time");
 let rentSeekBubble = document.getElementById("rent-seek-bubble");
+let inflationCanvas =document.getElementById("inflation-chart").getContext("2d");
 
 
 
@@ -48,13 +49,99 @@ const bubbleData = {
     }],
   };
 
+//Inflation Background Chart Data
+const inflationLabels = ["09/20","10/20","11/20","12/20","01/21","02/21", "03/21", "04/21", "05/21", "06/21"];
+const inflationData = [7.74, 8.05, 8.69, 12.19, 12.26, 16.1, 20.24, 27.13, 30.51, 25.27];
+
 //Global defaults
 Chart.defaults.global.defaultFontColor = 'white';
 Chart.defaults.global.defaultFontSize = 10;
 Chart.defaults.global.defaultFontFamily = "'hero-new', 'Helvetica', sans-serif";
 
 
+//Inflation Gradient
+// let gradient = inflationCanvas.createLinearGradient(0, 0, 0, 450);
+// gradient.addColorStop(0,'rgba(31, 39, 74, 0.3)');
+// gradient.addColorStop(0.5,'rgba(31, 39, 74, 0.15)');
+// gradient.addColorStop(1, 'rgba(31, 39, 74, 0)');
+// let gradient = inflationCanvas.createLinearGradient(0, 0, 0, 400);
+// gradient.addColorStop(0, 'rgba(250,174,50,1)');   
+// gradient.addColorStop(1, 'rgba(250,174,50,0)');
+let width, height, gradient;
+const getGradient = (ctx, chartArea) => {
+  const chartWidth = chartArea.right - chartArea.left;
+  const chartHeight = chartArea.bottom - chartArea.top;
+  if (gradient === null || width !== chartWidth || height !== chartHeight) {
+    // Create the gradient because this is either the first render
+    // or the size of the chart has changed
+    width = chartWidth;
+    height = chartHeight;
+    gradient = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+    gradient.addColorStop(0,'rgba(31, 39, 74, 0.8)');
+    gradient.addColorStop(0.5,'rgba(31, 39, 74, 0.4)');
+    gradient.addColorStop(1, 'rgba(31, 39, 74, 0)');
+  }
+
+  return gradient;
+}
+
+
 //Charts
+let inflationChart = new Chart(inflationCanvas, {
+    type: 'line',
+    data: {
+      labels: inflationLabels,
+      datasets: [{
+        label: 'Inflation',
+        data: inflationData,
+        backgroundColor: function(context) {
+            const chart = context.chart;
+            const {ctx, chartArea} = chart;
+    
+            if (!chartArea) {
+              // This case happens on initial chart load
+              return null;
+            }
+            return getGradient(ctx, chartArea);
+          },
+        pointBackgroundColor: 'rgba(31, 39, 74, 1)',
+		borderWidth: 0.75,
+		borderColor: '#5075AB'
+      }],
+    },
+    options: {
+      legend: {
+          display: false
+      },
+      scales: {
+          xAxes: [{
+              ticks: {
+                  display: false
+                  
+              },
+              gridLines: {
+                  display: false,
+              },
+              scaleLabel: {
+                  display: true
+              }
+            
+          }],
+          yAxes: [{
+              ticks: {
+                  display: false
+              },
+              gridLines: {
+                  display: false
+              },
+          }],
+        },
+        //responsive: false
+        
+        
+  }
+  });
+  
 let m4xChart12Month = new Chart(m4x12MonthCanvas, {
   type: 'line',
   data: {
@@ -98,11 +185,6 @@ let m4xChart12Month = new Chart(m4x12MonthCanvas, {
             gridLines: {
                 display: false
             },
-
-            // scaleLabel: {
-            //     display: true,
-            //     labelString: 'Growth'
-            // }
         }],
       },
       
@@ -157,11 +239,6 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
                   display: false
               },
               
-              
-              // scaleLabel: {
-              //     display: true,
-              //     labelString: 'Growth'
-              // }
           }]
         }
         

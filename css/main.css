@@ -9032,6 +9032,7 @@ nav #navbar-subtitle span {
   background-color: #101426;
   padding: 0.5rem;
   margin-bottom: 1rem;
+  z-index: -2;
 }
 
 .sidebox {
@@ -9149,6 +9150,15 @@ nav #navbar-subtitle span {
   width: 100%;
   margin: 0 -0.5rem;
   bottom: 0.2rem;
+}
+
+#mainbox-background {
+  position: absolute;
+  right: 0.001rem;
+  bottom: 0.075rem;
+  width: 100.8%;
+  height: 100%;
+  z-index: 10000;
 }
 
 /* Small devices (landscape phones, 544px and up) */

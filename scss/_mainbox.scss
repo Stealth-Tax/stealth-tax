@@ -33,3 +33,17 @@
     margin: 0 -0.5rem;
     bottom: 0.2rem; 
 }
+
+#mainbox-background {
+    position: absolute;
+    right: 0.001rem;
+    bottom: 0.075rem;
+    //background-color: red;
+    width: 100.8%;
+    height: 100%;
+    z-index: 10000;
+    //border: 1px solid red;
+    
+    //margin-bottom: -0.5rem;
+   
+}
