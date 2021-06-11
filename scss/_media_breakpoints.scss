@@ -10,6 +10,16 @@ $small-content-height:420px;
     .chart-inner-container {
         width: 75%;
     }
+    #mainbox-background {
+        top: 8rem;
+    }
+    #mainbox-footer {
+        img {
+            width: 25px;
+            margin-left: 0 !important;
+        }
+    }
+
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -22,6 +32,9 @@ $small-content-height:420px;
     }
     .chart-inner-container {
         width: 75%;
+    }
+    #mainbox-background {
+        top: 5rem;
     }
 }
 /* Large devices (desktops, 992px and up) */
@@ -38,6 +51,9 @@ $small-content-height:420px;
     .chart-inner-container {
         width: 90%;
     }
+    #mainbox-background {
+        top: 1rem;
+    }
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
@@ -51,6 +67,9 @@ $small-content-height:420px;
     .small-content-box {
         min-height: $small-content-height *1.11;
     }
+    #mainbox-background {
+        top: 3rem;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -63,5 +82,8 @@ $small-content-height:420px;
     }
     .small-content-box {
         min-height: $small-content-height;
+    }
+    #mainbox-background {
+        top: 0;
     }
 }
