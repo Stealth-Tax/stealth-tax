@@ -50,7 +50,7 @@ const bubbleData = {
   };
 
 //Inflation Background Chart Data
-const inflationLabels = ["09/20","10/20","11/20","12/20","01/21","02/21", "03/21", "04/21", "05/21", "06/21"];
+const inflationLabels = ["September 2020","October 2020","November 2020","December 2020","January 2021"," February 2021", "March 2021", "April 2021", "May 2021", "June 2021"];
 const inflationData = [7.74, 8.05, 8.69, 12.19, 12.26, 16.1, 20.24, 27.13, 30.51, 25.27];
 
 //Global defaults
@@ -110,6 +110,20 @@ let inflationChart = new Chart(inflationCanvas, {
       }],
     },
     options: {
+        tooltips: {
+            
+            callbacks: {
+                label: function(tooltipItem, data) {
+                    return 'Inflation: ' + data['datasets'][0]['data'][tooltipItem['index']] + "%";
+                }
+            },
+            titleFontSize: 12,
+            bodyFontSize: 14,
+            bodyAlign: 'right',
+            displayColors: false,
+            
+
+        },
       legend: {
           display: false
       },
@@ -187,8 +201,16 @@ let m4xChart12Month = new Chart(m4x12MonthCanvas, {
             },
         }],
       },
-      
-      
+      tooltips: {
+        callbacks: {
+            label: function(tooltipItem, data) {
+                return data['datasets'][0]['data'][tooltipItem['index']] + "%";
+            }
+        },
+        titleAlign: 'center',
+        bodyAlign: 'center',
+        displayColors: false
+      }    
 }
 });
 
@@ -240,8 +262,17 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
               },
               
           }]
-        }
-        
+        },
+        tooltips: {
+            callbacks: {
+                label: function(tooltipItem, data) {
+                    return data['datasets'][0]['data'][tooltipItem['index']] + "%";
+                }
+            },
+            titleAlign: 'center',
+            bodyAlign: 'center',
+            displayColors: false
+          }
   }
   });
 
@@ -266,6 +297,20 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
         legend: {
             display: false
         },
+        tooltips: {
+            callbacks: {
+                title: function(tooltipItem, data) {
+                    return data['labels'][tooltipItem[0]['index']];
+                },
+                label: function(tooltipItem, data) {
+                    return data['datasets'][0]['data'][tooltipItem['index']] + "%";
+                }
+            },
+            //titleAlign: 'center',
+            bodyAlign: 'right',
+            bodyFontSize: 14,
+            displayColors: false
+          }
         
     }
   });
@@ -317,7 +362,17 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
   
               
           }],
-        }
+        },
+        tooltips: {
+            callbacks: {
+                label: function(tooltipItem, data) {
+                    return 'State Rent Seeking: ' + data['datasets'][0]['data'][tooltipItem['index']] + "%";
+                }
+            },
+            titleAlign: 'center',
+            bodyAlign: 'center',
+            displayColors: false
+          }
         
   }
   });
@@ -331,7 +386,9 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
                 label: function(tooltipItem, data) {
                     return data.datasets[tooltipItem.datasetIndex].label;
                 }
-            }
+            },
+            displayColors: false,
+            bodyFontSize: 14
         },
         
         plugins: {
@@ -357,6 +414,7 @@ let m4xChart3Month = new Chart(m4x3MonthCanvas, {
                     min: 0
                 } 
             }]
-        }
+        },
+        
     }
 });
