@@ -1,6 +1,6 @@
-# Stealth Tax - June 2021 v1.0
+# Stealth Tax - June 2021 v1.01
 ### <https://stealthtax.io>
-### Also available via IPFS on [stealthtax.crypto](https://unstoppabledomains.com/)
+### Soon to be available via IPFS on [stealthtax.crypto](https://unstoppabledomains.com/)
 
 
 ## The State of Theft
@@ -8,7 +8,7 @@ _Inflation is the opium of the masses - Henry Hazlitt_
 
 Stealth Tax is entirely open source and available under the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/legalcode)
 
-We use the following open source libraries and tools:
+## Technologies:
   * [Bootstrap v5.0](https://getbootstrap.com/)
   * [Chart.js](https://www.chartjs.org/)
   * [Canvas Gauges](https://canvas-gauges.com/)
@@ -39,16 +39,22 @@ Why do we use these data?
 (note 2) corrected for GBPUSD and market capitalisation
 
 ### Release notes:
-* 10 June 21 - Final minor changes for initial release. Deployed. See commit list for further details.
-* Next release will include backdated modelling of real inflation to show changes over last two years or so
-* Real inflation index calculation method to be released in next cycle.
+* v1.01 - 12 June 21 
+  * RII Methedology Detailed
+  * Historical RII data and chart included on main page
+  * BAT tip integration added
+  * Stealth-Tax organisation created on GitHub
+* v1.0 - 10 June 21
+  * Final minor changes for initial release. Deployed. See commit list for further details.
+  * Next release will include backdated modelling of real inflation to show changes over last year
+  * Real inflation index calculation method to be released in next cycle.
 
 ### Contact
 [info@stealthtax.io](mailto:info@stealthtax.io)
 [Roadmap](https://trello.com/b/ZzibImIv/roadmap)
 
 ### Support
-Send crypto of your choice directly to [stealthtax.crypto](stealthtax.crypto)
+Support via BAT and Brave Browser on <www.stealthtax.io>
 Alternatively:
 * **BTC**: 1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU
 * **XMR**: 4ARzc1qxPCd3nhuaCYc4d4HQd7VL6rvQGSaqiHiiCc9XPEHWNgyuNrGaHqbtsVxHQdbiXzzSo2j68ia27vQgjdnT1QCptH7
