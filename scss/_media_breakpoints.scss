@@ -1,6 +1,36 @@
 //variables
 $small-content-height:420px;
+//Smallest
+@media (max-width: 570px) {
+    #mainbox-background {
+        top: 11rem;
+    }
+    #money-gauge-container {
+        width: 325px;
+        height: 280px;
+        margin: 5rem auto 0 auto;
+    }
+    #money-gauge {
+        width: 150px !important;
+        height: 150px !important;
+        margin-top: 5rem;
+    }
+    #mainbox-footer {
+        img {
+            width: 26px;
+            margin-left: 0 !important;
+            margin-top: 2rem;
+        }
+    }
 
+    #mainbox-content-box {
+        height: 590px;
+    }
+
+    #money-supply-applet {
+        margin-bottom: 3.5rem;
+    }
+}
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 576px) {  
