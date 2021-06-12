@@ -9009,11 +9009,17 @@ nav .btn-secondary:focus {
 nav .dropdown-menu {
   cursor: pointer;
 }
+nav .card {
+  cursor: auto;
+}
 nav .card-footer {
   text-align: center;
 }
 nav .card-img-bottom {
   cursor: pointer;
+}
+nav .card-img-bottom:hover {
+  opacity: 0.75;
 }
 nav #card-footer-line {
   width: 300px;
@@ -9021,6 +9027,12 @@ nav #card-footer-line {
 }
 nav #navbar-subtitle span {
   font-style: italic;
+}
+nav .modal-link {
+  text-decoration: underline;
+}
+nav .modal-link:hover {
+  cursor: pointer;
 }
 
 .navbar {

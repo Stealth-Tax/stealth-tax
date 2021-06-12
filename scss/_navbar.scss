@@ -22,11 +22,17 @@ nav {
     .dropdown-menu {
         cursor: pointer;
     }
+    .card {
+        cursor: auto;
+    }
     .card-footer {
         text-align: center;
     }
     .card-img-bottom {
         cursor: pointer;
+        &:hover {
+            opacity: 0.75;
+        }
     }
 
     #card-footer-line {
@@ -37,6 +43,12 @@ nav {
     #navbar-subtitle {
         span {
             font-style: italic;
+        }
+    }
+    .modal-link {
+        text-decoration: underline;
+        &:hover {
+            cursor: pointer;
         }
     }
 
