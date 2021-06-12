@@ -44,6 +44,10 @@ Why do we use these data?
   * Historical RII data and chart included on main page
   * BAT tip integration added
   * Stealth-Tax organisation created on GitHub
+  * Resize optimisation for mobile phones
+  * Trello Roadmap linked
+  * Modals z-index optimised
+  * Favicon added
 * v1.0 - 10 June 21
   * Final minor changes for initial release. Deployed. See commit list for further details.
   * Next release will include backdated modelling of real inflation to show changes over last year
@@ -54,7 +58,7 @@ Why do we use these data?
 [Roadmap](https://trello.com/b/ZzibImIv/roadmap)
 
 ### Support
-Support via BAT and Brave Browser on <www.stealthtax.io>
+Support via BAT and Brave Browser on [www.stealthtax.io]
 Alternatively:
 * **BTC**: 1KL7B1x9FRALcoTckPpf4rDzEP1Gh7VCBU
 * **XMR**: 4ARzc1qxPCd3nhuaCYc4d4HQd7VL6rvQGSaqiHiiCc9XPEHWNgyuNrGaHqbtsVxHQdbiXzzSo2j68ia27vQgjdnT1QCptH7
