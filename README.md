@@ -1,6 +1,6 @@
 # Stealth Tax - June 2021 v1.01
 ### <https://stealthtax.io>
-### Soon to be available via IPFS on [stealthtax.crypto](https://unstoppabledomains.com/)
+### Available soon with IPFS on [stealthtax.crypto](https://unstoppabledomains.com/)
 
 
 ## The State of Theft
@@ -42,6 +42,12 @@ Why do we use these data?
 (note 3) 50 day EMA used to smooth index
 
 ### Release notes:
+* v1.02 - 19 June 21
+  * RII index modified to incorporate FTSE100 and analysis backdated
+  * Inflation Vector Calculator v1.0 released - further technical descriptions to follow here
+  * Created and linked to [Medium](https://medium.com/@stealth-tax) and [Twitter](https://twitter.com/StealthTax)
+  * New favicon
+  * Page title changed - _Stealth Tax - home of the Real Inflation Index_
 * v1.01 - 12 June 21 
   * RII Methedology Detailed
   * Historical RII data and chart included on main page
@@ -59,6 +65,8 @@ Why do we use these data?
 ### Contact
 [info@stealthtax.io](mailto:info@stealthtax.io)
 [Roadmap](https://trello.com/b/ZzibImIv/roadmap)
+[Medium](https://medium.com/@stealth-tax)
+[Twitter](https://twitter.com/StealthTax)
 
 ### Support
 Support via BAT and Brave Browser on [www.stealthtax.io]
