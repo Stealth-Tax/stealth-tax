@@ -94,5 +94,10 @@ const copyBtcToClipboard = () => {
   }
 }
 
+//View Modal For Dev
+let inflationModal = new bootstrap.Modal(document.getElementById('inflation-vector-modal'));
+inflationModal.show();
+
+
 
 
