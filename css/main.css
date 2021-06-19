@@ -4556,7 +4556,7 @@ textarea.form-control-lg {
 }
 .tooltip {
   position: absolute;
-  z-index: 1080;
+  z-index: 1101;
   display: block;
   margin: 0;
   font-family: var(--bs-font-sans-serif);
@@ -10092,6 +10092,9 @@ nav .modal-link:hover {
 }
 .slider-container label {
   text-transform: uppercase;
+}
+.slider-container img {
+  margin-bottom: 0.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
