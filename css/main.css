@@ -10064,6 +10064,10 @@ nav .modal-link:hover {
   text-underline-offset: 0.2rem;
 }
 
+#inflation-modal-title {
+  width: 100%;
+}
+
 #inflation-vector-result-container {
   font-family: "Roboto", sans-serif;
   text-align: right !important;
@@ -10079,6 +10083,15 @@ nav .modal-link:hover {
 #inflation-vector-result-container span {
   font-size: 1.32rem;
   font-weight: 200;
+}
+
+.slider-container {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+.slider-container label {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -36,6 +36,7 @@
                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#theory-modal">theory</a>
                   </li>
                   <li class="nav-item dropdown">
+                    
                     <!-- USD TOAST-->
                     <div class="position-absolute end-0 p-3 mt-5" style="z-index: 1100">
                       <div id="usdToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
@@ -48,6 +49,7 @@
                         </div>
                       </div>
                     </div>
+
                     <a class="nav-link dropdown-toggle me-3" id="currencyDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">GBP(£)</a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="currencyDropdownMenuLink">
                       <li><a id="usdToastBtn" class="dropdown-item">USD($)</a></li>
@@ -78,44 +80,71 @@
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">INFLATION VECTOR</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="col">
+                    <div class="accordion accordion-flush" id="inflation-calc-instructions">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button id="inflation-modal-title" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            INFLATION VECTOR
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#inflation-calc-instructions">
+                          <div class="accordion-body">Use the sliders to reflect your relative holdings of each of the following assets. At the bottom is the cash slider, which moves in response. This can be understood as your remaining cash or other assets. The resulting figure is your residual inflation rate. We refer to it as a vector as inflation is best visualised as having a direction, with your assets acting against it to varying degrees depending on their quality. For more details, see our <a href="https://github.com/Stealth-Tax/stealth-tax" target="_blank">GitHub</a>.</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
               </div>
               <div class="modal-body text-start" id="inflation-modal-body">
-                
-                <!-- Total Wealth / Cash -->
-                <label for="cash-slider" class="form-label">Cash</label>
-                <input type="range" class="form-range" min="0" max="10" step="1" value="10" id="cash-slider" disabled>
-                
+                                
                 <!-- Real Estate / Housing -->
-                <label for="house-slider" class="form-label">Housing</label>
-                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="house-slider">
+                <div class="slider-container">
+                  <label for="house-slider" class="form-label">Housing</label>
+                  <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="house-slider">
+                </div>
                 
-                <!-- Crypto -->
-                <label for="crypto-slider" class="form-label">Bitcoin</label>
-                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="bitcoin-slider">
-                
-                <!-- Gold -->
-                <label for="gold-slider" class="form-label">Gold</label>
-                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="gold-slider">
                 
                 <!-- Stocks -->
-                <label for="stock-slider" class="form-label">Stocks</label>
-                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="stock-slider">
+                <div class="slider-container">
+                  <label for="stock-slider" class="form-label">Stocks</label>
+                  <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="stock-slider">  
+                </div>
+                
+                <!-- Gold -->
+                <div class="slider-container">
+                  <label for="gold-slider" class="form-label">Gold</label>
+                  <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="gold-slider">  
+                </div>
+               
+                <!-- Bitcoin -->
+                <div class="slider-container">
+                  <label for="bitcoin-slider" class="form-label">Bitcoin</label>
+                  <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="bitcoin-slider">  
+                </div>
+                
+                <!-- Total Wealth / Cash -->
+                <div class="slider-container">
+                  <label for="cash-slider" class="form-label">Cash</label>
+                  <input type="range" class="form-range" min="0" max="10" step="1" value="10" id="cash-slider" disabled>  
+                </div>
                 
                 <!-- INFLATION CALCED -->
-                <h5>Personal Inflation:</h5>
+                <h5>Residual Inflation:</h5>
                 <div id="inflation-vector-result-container">
                   <h1 id="inflation-vector-calculated">20.5<span>%</span></h1>
                 </div>
                 
               </div>
               <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">Instructions</button>
+
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
+
+
 
         <!-- Theory Modal -->
         <div class="modal fade" id="theory-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

@@ -33,6 +33,10 @@
     }
 }
 
+#inflation-modal-title {
+    width: 100%;
+}
+
 #inflation-vector-result-container {
     font-family: 'Roboto', sans-serif;
     text-align: right !important;
@@ -51,4 +55,13 @@
         font-weight: 200;
     }
     
+}
+
+.slider-container {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 90%;
+    label {
+        text-transform: uppercase;
+    }
 }
