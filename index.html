@@ -81,7 +81,7 @@
                 <h5 class="modal-title" id="staticBackdropLabel">INFLATION VECTOR</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body text-start">
+              <div class="modal-body text-start" id="inflation-modal-body">
                 
                 <!-- Total Wealth / Cash -->
                 <label for="cash-slider" class="form-label">Cash</label>
@@ -102,7 +102,13 @@
                 <!-- Stocks -->
                 <label for="stock-slider" class="form-label">Stocks</label>
                 <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="stock-slider">
-  
+                
+                <!-- INFLATION CALCED -->
+                <h5>Personal Inflation:</h5>
+                <div id="inflation-vector-result-container">
+                  <h1 id="inflation-vector-calculated">20.5<span>%</span></h1>
+                </div>
+                
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

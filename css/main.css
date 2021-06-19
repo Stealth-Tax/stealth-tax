@@ -10055,4 +10055,30 @@ nav .modal-link:hover {
   margin-bottom: 0.3rem;
 }
 
+#inflation-modal-body h5, #inflation-modal-body .h5 {
+  text-align: center !important;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #5075AB;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.2rem;
+}
+
+#inflation-vector-result-container {
+  font-family: "Roboto", sans-serif;
+  text-align: right !important;
+  border: solid #5075AB 4px;
+  width: 25%;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+#inflation-vector-result-container h1, #inflation-vector-result-container .h1 {
+  font-size: 2.145rem;
+}
+#inflation-vector-result-container span {
+  font-size: 1.32rem;
+  font-weight: 200;
+}
+
 /*# sourceMappingURL=main.css.map */
