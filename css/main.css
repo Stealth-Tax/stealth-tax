@@ -9907,6 +9907,69 @@ nav .modal-link:hover {
   height: 100%;
 }
 
+.modal-body {
+  text-align: center;
+}
+
+#inflation-vector-modal #theory-modal {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.crypto-qr {
+  width: 40%;
+}
+.crypto-qr .figure-img {
+  width: 85%;
+}
+
+#bat-logo {
+  width: 20px;
+  margin-left: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+#inflation-modal-body h5, #inflation-modal-body .h5 {
+  text-align: center !important;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #5075AB;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.2rem;
+}
+
+#inflation-modal-title {
+  width: 100%;
+}
+
+#inflation-vector-result-container {
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+  border: solid #5075AB 4px;
+  width: 25%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+#inflation-vector-result-container h1, #inflation-vector-result-container .h1 {
+  font-size: 2.145rem;
+}
+#inflation-vector-result-container span {
+  font-size: 1.32rem;
+  font-weight: 200;
+}
+
+.slider-container {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+.slider-container label {
+  text-transform: uppercase;
+}
+.slider-container img {
+  margin-bottom: 0.2rem;
+}
+
 @media (max-width: 570px) {
   #mainbox-background {
     top: 11rem;
@@ -9936,6 +9999,12 @@ nav .modal-link:hover {
 
   #money-supply-applet {
     margin-bottom: 3.5rem;
+  }
+
+  #inflation-vector-result-container {
+    width: 30%;
+    padding: 1rem;
+    text-align: center;
   }
 }
 /* Small devices (landscape phones, 544px and up) */
@@ -10032,69 +10101,6 @@ nav .modal-link:hover {
   #mainbox-background {
     top: 0;
   }
-}
-.modal-body {
-  text-align: center;
-}
-
-#inflation-vector-modal #theory-modal {
-  text-align: left;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.crypto-qr {
-  width: 40%;
-}
-.crypto-qr .figure-img {
-  width: 85%;
-}
-
-#bat-logo {
-  width: 20px;
-  margin-left: 0.5rem;
-  margin-bottom: 0.3rem;
-}
-
-#inflation-modal-body h5, #inflation-modal-body .h5 {
-  text-align: center !important;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: #5075AB;
-  text-decoration-thickness: 0.2rem;
-  text-underline-offset: 0.2rem;
-}
-
-#inflation-modal-title {
-  width: 100%;
-}
-
-#inflation-vector-result-container {
-  font-family: "Roboto", sans-serif;
-  text-align: right !important;
-  border: solid #5075AB 4px;
-  width: 25%;
-  margin: 1rem auto;
-  padding: 1rem;
-  text-align: center;
-}
-#inflation-vector-result-container h1, #inflation-vector-result-container .h1 {
-  font-size: 2.145rem;
-}
-#inflation-vector-result-container span {
-  font-size: 1.32rem;
-  font-weight: 200;
-}
-
-.slider-container {
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  width: 90%;
-}
-.slider-container label {
-  text-transform: uppercase;
-}
-.slider-container img {
-  margin-bottom: 0.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
