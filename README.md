@@ -1,4 +1,4 @@
-# Stealth Tax - June 2021 v1.01
+# Stealth Tax - June 2021 v1.02
 ### <https://stealthtax.io>
 ### Available soon with IPFS on [stealthtax.crypto](https://unstoppabledomains.com/)
 
