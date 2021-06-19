@@ -64,7 +64,7 @@ $accordion-button-active-color: rgba(white, 0.85);
 $form-range-track-bg: $dark;
 $form-range-thumb-bg: $secondary;
 $form-range-thumb-active-bg: tint-color($secondary, 50%);
-
+$form-range-thumb-disabled-bg: $secondary;
 
 //Main setup
 #main-container {

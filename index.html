@@ -82,8 +82,27 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body text-start">
-                <label for="customRange3" class="form-label">Example range</label>
-                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                
+                <!-- Total Wealth / Cash -->
+                <label for="cash-slider" class="form-label">Cash</label>
+                <input type="range" class="form-range" min="0" max="10" step="1" value="10" id="cash-slider" disabled>
+                
+                <!-- Real Estate / Housing -->
+                <label for="house-slider" class="form-label">Housing</label>
+                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="house-slider">
+                
+                <!-- Crypto -->
+                <label for="crypto-slider" class="form-label">Bitcoin</label>
+                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="crypto-slider">
+                
+                <!-- Gold -->
+                <label for="gold-slider" class="form-label">Gold</label>
+                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="gold-slider">
+                
+                <!-- Stocks -->
+                <label for="stock-slider" class="form-label">Stocks</label>
+                <input type="range" class="form-range" min="0" max="10" step="1" value="0" id="stock-slider">
+  
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
