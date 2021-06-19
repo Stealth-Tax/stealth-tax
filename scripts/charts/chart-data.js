@@ -51,7 +51,7 @@ const bubbleData = {
 
 //Inflation Background Chart Data
 const inflationLabels = ["September 2020","October 2020","November 2020","December 2020","January 2021"," February 2021", "March 2021", "April 2021", "May 2021", "June 2021"];
-const inflationData = [7.74, 8.05, 8.69, 12.19, 12.26, 16.1, 20.24, 27.13, 30.51, 25.27];
+const inflationData = [6.0, 6.5, 7.1, 10.0, 10.3, 12.9, 15.4, 20.7, 23.6, 20.5];
 
 //Global defaults
 Chart.defaults.global.defaultFontColor = 'white';

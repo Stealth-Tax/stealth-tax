@@ -26,6 +26,7 @@ Our methodology focuses on the following factors:
 2. House Price Index
 3. S&P GSCI commodities index (note 1)
 4. CIX100 cryptocurrency index (note 2)
+5. FTSE 100 (note 3)
 
 We take trailing 12-month percentage changes of each and weight them by 0.5, 0.25, 0.05 and 0.2 respectively. These are open to optimisation as we continue to improve our process, though some level of arbitrariness cannot be avoided. It is likely that the cryptocurrency factor will increase as bitcoinization unfolds. Data is updated as new releases come out. When data is less than monthly the lagged figure is kept in the equation.
 
@@ -34,9 +35,11 @@ Why do we use these data?
 2. House prices are crucial to the UK economy and are the largest constituent of individual wealth. As a hard asset, house prices are important for measuring inflation of GBP. In the absence of suitably hard alternatives, the fiat system has increased demand for housing as an inflation hedge. As bitcoinization manifests, we believe it will eat into this excess demand and damage the quality of the housing hedge.
 3. Life consumes commodities. This cannot be abstracted away from, even when operating at low time preference. It is a pure consumption factor. Another important aspect is that it captures GBP depreciation given the UK imports most of its commodities. When the balance of payments and sterling index become more negative, this increases the GSCI contribution to the index. 
 4. The most optimally hard asset is bitcoin, which is the largest constituent of the CIX100 index. Although other cryptocurrencies and fiat stablecoins also figure, most of which are not hard per se, we view the market capitalisation of the cryptosphere as reflective of demand to be on-chain and rejecting of global fiat debasement. As with housing, a rising CIX100 contributes positively to the RII as demand for hard assets is a proxy for inflation in GBP.
+5. Many people accrue shares over time in their pensions and savings accounts. The FTSE 100 is the largest UK index by market cap and reflective of the broader UK stockmarket, albeit much of constituents' earnings are abroad. A rising stockmarket makes each unit purchased more expensive, reflective of inflation. Of course, it makes units already owned more valuable (in fiat terms), but the index aims to show inflation of marginal purchases and debasement of money in circulation.
 
 (note 1) corrected for GBPUSD and UK balance of payments
 (note 2) corrected for GBPUSD and market capitalisation
+(note 3) 50 day EMA used to smooth index
 
 ### Release notes:
 * v1.01 - 12 June 21 
