@@ -28,7 +28,7 @@ Our methodology focuses on the following factors:
 4. CIX100 cryptocurrency index (note 2)
 5. FTSE 100 (note 3)
 
-We take trailing 12-month percentage changes of each and weight them by 0.5, 0.25, 0.05 and 0.2 respectively. These are open to optimisation as we continue to improve our process, though some level of arbitrariness cannot be avoided. It is likely that the cryptocurrency factor will increase as bitcoinization unfolds. Data is updated as new releases come out. When data is less than monthly the lagged figure is kept in the equation.
+We take trailing 12-month percentage changes of each and weight them by 0.5, 0.20, 0.05, 0.10 and 0.15 respectively. These are open to optimisation as we continue to improve our process, though some level of arbitrariness cannot be avoided. It is likely that the cryptocurrency factor will increase as bitcoinization unfolds. Data is updated as new releases come out. When data is less than monthly the lagged figure is kept in the equation.
 
 Why do we use these data?
 1. M4x is the best proxy for bank deposits, which makes up the majority of money in the system. This is not perfect due to the roundabout mechanics of fiat banking, but it is the most optimum measure, in our view. It has the largest weighting in the index as over the medium to long term there is a strong correlation between broad money growth and nominal income. Avoiding the obfuscation and noise of short-term effects and the oscillatory nature of the fiat business cycle, money quantity growth simply is inflation. 
@@ -40,6 +40,11 @@ Why do we use these data?
 (note 1) corrected for GBPUSD and UK balance of payments
 (note 2) corrected for GBPUSD and market capitalisation
 (note 3) 50 day EMA used to smooth index
+
+## Inflation Vector concept and methodology
+The concept of the Inflation Vector is to demonstrate the effect holding different assets has on our generic inflation figure, the Real Inflation Index (RII).  We have used assets one might commonly turn to in an attempt to ‘hedge’ inflation. Conceptualising inflation as a vector is useful to understand the effect it can have on your real wealth over time. It acts with a magnitude and direction on your assets, and your assets have certain attributes that can counter it, or in some cases add to it. 
+
+The calculation behind the Vector is based on the performance of each asset over the past 12 months. Performance is defined as with the RII calculation for housing, stocks and bitcoin. The 50 day EMA of XAUGBP is used for gold. These figures will be updated monthly, as with the RII. Adjustments to the RII happen in proportion to the slider position and are limited by the RII figure, even if the performance of an asset is greater than the RII figure. Usually, these adjustments will be negative (ie. residual inflation will be less than the RII), as each of the assets acts against the vector of fiat inflation. 
 
 ### Release notes:
 * v1.02 - 19 June 21
