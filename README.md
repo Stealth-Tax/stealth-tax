@@ -51,6 +51,7 @@ The calculation behind the Vector is based on the performance of each asset over
   * Latest M4x data incorporated
   * Latest RII data updated along
   * Latest constituent data updated
+  * Social media handles colour change
 * v1.02 - 19 June 21
   * RII index modified to incorporate FTSE100 and analysis backdated
   * Inflation Vector Calculator v1.0 released - further technical descriptions to follow here
