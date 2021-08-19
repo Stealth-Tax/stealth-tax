@@ -53,11 +53,11 @@ stockSlider.oninput = function() {
 
 
 //To update the index
-const realInflatioIndex = 20.5;
-const houseMaxAdj = 10.2;
+const realInflatioIndex = 19.0;
+const houseMaxAdj = 10.0;
 const bitcoinMaxAdj = realInflatioIndex;
-const goldMaxAdj = 4.8;
-const stockMaxAdj = 15.2;
+const goldMaxAdj = 5.9;
+const stockMaxAdj = 14.6;
 
 const updateInflation = () => {
 
