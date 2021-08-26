@@ -47,6 +47,8 @@ The concept of the Inflation Vector is to demonstrate the effect holding differe
 The calculation behind the Vector is based on the performance of each asset over the past 12 months. Performance is defined as with the RII calculation for housing, stocks and bitcoin. The 50 day EMA of XAUGBP is used for gold. These figures will be updated monthly, as with the RII. Adjustments to the RII happen in proportion to the slider position and are limited by the RII figure, even if the performance of an asset is greater than the RII figure. Usually, these adjustments will be negative (ie. residual inflation will be less than the RII), as each of the assets acts against the vector of fiat inflation. 
 
 ### Release notes:
+* v1.05 - 26 August 21
+  * Added essays to navbar
 * v1.04 - 19 August 21
   * Latest M4x data incorporated
   * Latest RII data updated along
