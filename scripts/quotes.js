@@ -11,7 +11,11 @@ const quotes = [{
     quote: 'Inflation is the autosuggestion, the hypnotism, the anesthetic, that has dulled the pain[...]. Inflation is the opium of the people',
     author: 'Henry Hazlitt'}, {
     quote: 'Inflation, being a fraudulent invasion of property, could not take place on the free market.',
-    author: 'Murray Rothbard'}
+    author: 'Murray Rothbard'}, {
+    quote: 'I do not think it is an exaggeration to say history is largely a history of inflation, usually inflations engineered by governments for the gain of governments.',
+    author: 'Friedrich Hayek'}, {
+    quote: 'The State is the great fiction by which everyone endeavours to live at the expense of everyone else.',
+    author: 'Frédéric Bastiat'}
     ];
 
 
