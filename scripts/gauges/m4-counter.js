@@ -1,5 +1,5 @@
 const moneyCounter = document.getElementById('money-counter');
-const startingAmmount = 265422700000; 
+const startingAmmount = 2684371000000; 
 const initTime = new Date(2021, 01, 01);
 const yearlyGrowth = 0.079;
 const secondsInYear = (360*24*60*60);
